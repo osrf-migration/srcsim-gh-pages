@@ -1,0 +1,312 @@
+tim@tim-Z97X:~$ Q2launch
+/usr/local/bin/Q2launch: 3: /usr/local/bin/Q2launch: source: not found
+... logging to /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/roslaunch-tim-Z97X-6827.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://127.0.0.1:40599/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ihmc_ros/robot_name: valkyrie
+ * /ihmc_ros/valkyrie/left_arm_joint_names: ['leftShoulderPit...
+ * /ihmc_ros/valkyrie/left_foot_frame_name: leftFoot
+ * /ihmc_ros/valkyrie/right_arm_joint_names: ['rightShoulderPi...
+ * /ihmc_ros/valkyrie/right_foot_frame_name: rightFoot
+ * /ihmc_valkyrie_control_java_bridge/jvm_args: -Djava.class.path...
+ * /ihmc_valkyrie_control_java_bridge/main_class: us.ihmc.valkyrieR...
+ * /ihmc_valkyrie_control_java_bridge/type: ihmc_ros_control/...
+ * /ihmc_valkyrie_control_java_bridge/working_dir: /home/tim/valkyrie
+ * /joint_state_controller/publish_rate: 50
+ * /joint_state_controller/type: joint_state_contr...
+ * /multisense/camera/stereo_proc/approximate_sync: False
+ * /multisense/camera/stereo_proc/disparity_range: 128
+ * /multisense_points2_color_relay/lazy: True
+ * /multisense_points2_relay/lazy: True
+ * /robot_description: <?xml version="1....
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+ * /use_sim_time: True
+ * /valkyrie/robot_description: <?xml version="1....
+
+NODES
+  /multisense/camera/
+    stereo_proc (stereo_image_proc/stereo_image_proc)
+  /
+    IHMCValkyrieROSAPI (ihmc_ros_java_adapter/gradlew)
+    control_py_tim_Z97X_6827_6865053755659675999 (robonet_tools/control)
+    controller_manager_tim_Z97X_6827_3411518844235113732 (val_deploy/delayed_roslaunch.sh)
+    controller_spawner_tim_Z97X_6827_5527932390705013317 (controller_manager/spawner)
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    multisense_points2_color_relay (topic_tools/relay)
+    multisense_points2_relay (topic_tools/relay)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    sim_smt_topic_creator_tim_Z97X_6827_5358534888734160328 (val_deploy/delayed_roslaunch.sh)
+    smtcore_tim_Z97X_6827_4528315983245638749 (shared_memory_transport/smtcore)
+    startup_robot (srcsim/init_robot.sh)
+    urdf_spawner_tim_Z97X_6827_4816338517619465102 (val_deploy/delayed_roslaunch.sh)
+
+auto-starting new master
+process[master]: started with pid [6839]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 7964ea54-da84-11e6-8576-74da386b9608
+process[rosout-1]: started with pid [6852]
+started core service [/rosout]
+process[smtcore_tim_Z97X_6827_4528315983245638749-2]: started with pid [6875]
+process[control_py_tim_Z97X_6827_6865053755659675999-3]: started with pid [6877]
+process[sim_smt_topic_creator_tim_Z97X_6827_5358534888734160328-4]: started with pid [6878]
+delaying: 3 seconds
+process[controller_manager_tim_Z97X_6827_3411518844235113732-5]: started with pid [6880]
+delaying: 5 seconds
+process[gazebo-6]: started with pid [6882]
+process[gazebo_gui-7]: started with pid [6886]
+process[urdf_spawner_tim_Z97X_6827_4816338517619465102-8]: started with pid [6888]
+delaying: 7 seconds
+process[robot_state_publisher-9]: started with pid [6892]
+process[IHMCValkyrieROSAPI-10]: started with pid [6895]
+process[controller_spawner_tim_Z97X_6827_5527932390705013317-11]: started with pid [6903]
+Log file /home/tim/.log already exists, proceeding...
+process[startup_robot-12]: started with pid [6919]
+INIT: Wait 15s (ROS time) for system to load
+process[multisense/camera/stereo_proc-13]: started with pid [6932]
+process[multisense_points2_relay-14]: started with pid [6942]
+Log file /home/tim/.log already exists, proceeding...
+process[multisense_points2_color_relay-15]: started with pid [6944]
+Gazebo multi-robot simulator, version 7.5.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+[ INFO] [1484417319.373623880]: Finished loading Gazebo ROS API Plugin.
+[Msg] Waiting for master.
+[ INFO] [1484417319.375074301]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[Msg] Connected to gazebo master @ http://127.0.0.1:11345
+[Msg] Publicized address: 10.0.0.126
+[INFO] [WallTime: 1484417319.648743] [0.000000] Controller Spawner: Waiting for service controller_manager/load_controller
+[ INFO] [1484417319.825492689, 0.024000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1484417319.898765709, 0.089000000]: Physics dynamic reconfigure ready.
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+> Configuring > 0/1 projects > root project > Resolving dependencies ':ros'starting: roslaunch val_gazebo smt_topic_creator.launch __name:=sim_smt_topic_creator_tim_Z97X_6827_5358534888734160328 __log:=/home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/sim_smt_topic_creator_tim_Z97X_6827_5358534888734160328-4.log
+... logging to /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/roslaunch-tim-Z97X-7522.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://127.0.0.1:39941/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+
+NODES
+  /
+    sim_smt_topic_creator_tim_Z97X_7522_3730711484642954774 (val_gazebo/shm_topic_creator)
+
+ROS_MASTER_URI=http://localhost:11311
+
+core service [/rosout] found
+process[sim_smt_topic_creator_tim_Z97X_7522_3730711484642954774-1]: started with pid [7543]
+:parseYaml UP-TO-DATE
+:runJavaDelegate
+Loading robot model from: 'models/val_description/sdf/valkyrie_sim.sdf'
+> Building 50% > :runJavaDelegate[sim_smt_topic_creator_tim_Z97X_7522_3730711484642954774-1] process has finished cleanly
+log file: /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/sim_smt_topic_creator_tim_Z97X_7522_3730711484642954774-1*.log
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+[sim_smt_topic_creator_tim_Z97X_6827_5358534888734160328-4] process has finished cleanly
+log file: /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/sim_smt_topic_creator_tim_Z97X_6827_5358534888734160328-4*.log
+[INFO] (NetworkParameters.java:38): Looking for network parameters in network parameters file at /opt/ros/indigo/share/ihmc_valkyrie_ros/configurations/IHMCNetworkParametersSim.ini
+[INFO] (NetworkParameters.java:42): Found Network parameters file at /opt/ros/indigo/share/ihmc_valkyrie_ros/configurations/IHMCNetworkParametersSim.ini
+[INFO] (NetworkParameters.java:69): Looking for network parameters in environment variables
+[INFO] (NetworkParameters.java:70): Environment variables will override entries in the network parameters file.
+Connecting to controller using TCP on localhost
+> Building 50% > :runJavaDelegatestarting: roslaunch val_deploy val_control_sim.launch controller_manager_looprate:=500 __name:=controller_manager_tim_Z97X_6827_3411518844235113732 __log:=/home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/controller_manager_tim_Z97X_6827_3411518844235113732-5.log
+... logging to /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/roslaunch-tim-Z97X-7611.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+[WARN] YoVariable: desiredMomentumRateLinearX is getting created with a null registry
+[WARN] YoVariable: desiredMomentumRateLinearY is getting created with a null registry
+[WARN] YoVariable: desiredMomentumRateLinearZ is getting created with a null registry
+[WARN] YoVariable: achievedMomentumRateLinearX is getting created with a null registry
+[WARN] YoVariable: achievedMomentumRateLinearY is getting created with a null registry
+[WARN] YoVariable: achievedMomentumRateLinearZ is getting created with a null registry
+[WARN] YoVariable: residualRootJointForceX is getting created with a null registry
+[WARN] YoVariable: residualRootJointForceY is getting created with a null registry
+[WARN] YoVariable: residualRootJointForceZ is getting created with a null registry
+[WARN] YoVariable: residualRootJointTorqueX is getting created with a null registry
+[WARN] YoVariable: residualRootJointTorqueY is getting created with a null registry
+[WARN] YoVariable: residualRootJointTorqueZ is getting created with a null registry
+> Building 50% > :runJavaDelegatestarted roslaunch server http://127.0.0.1:41227/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+
+NODES
+  /
+    controller_manager_tim_Z97X_7611_8746437522044667728 (val_controller_manager_rtt/controller_exec)
+
+ROS_MASTER_URI=http://localhost:11311
+
+core service [/rosout] found
+process[controller_manager_tim_Z97X_7611_8746437522044667728-1]: started with pid [7633]
+log4j:WARN No appenders could be found for logger (org.ros.internal.node.client.Registrar).
+log4j:WARN Please initialize the log4j system properly.
+> Building 50% > :runJavaDelegate2017-01-14 13:08:45 localhost ncl_cpp: [NOTICE  ] [gov.nasa.HardwareInterface.initializeRobotHardware] Robot Hardware has Initialized. Ready to start loading Controllers. 
+
+[INFO] [WallTime: 1484417325.380010] [5.421000] Controller Spawner: Waiting for service controller_manager/switch_controller
+[INFO] [WallTime: 1484417325.382026] [5.423000] Controller Spawner: Waiting for service controller_manager/unload_controller
+[INFO] [WallTime: 1484417325.386000] [5.428000] Loading controller: ihmc_valkyrie_control_java_bridge
+[ INFO] [1484417325.432794371, 5.473000000]: Starting JVM with arguments: -Djava.class.path=ValkyrieController.jar -XX:+UseSerialGC -Xmx4g -Xms4g -XX:NewSize=3g -XX:MaxNewSize=3g -XX:CompileThreshold=1000 -verbosegc -Djava.library.path=lib/
+Starting Java VM from path  /home/tim/valkyrie
+Started Java VM: success
+[ INFO] [1484417325.807369449, 5.852000000]: Loading robot model from: 'models/val_description/sdf/valkyrie_sim.sdf'
+starting: roslaunch val_gazebo spawn_urdf_model_from_robot_description.launch modelName:=valkyrie zOffset:=1.25 __name:=urdf_spawner_tim_Z97X_6827_4816338517619465102 __log:=/home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/urdf_spawner_tim_Z97X_6827_4816338517619465102-8.log
+... logging to /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/roslaunch-tim-Z97X-8321.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://127.0.0.1:34097/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+
+NODES
+  /
+    urdf_spawner (gazebo_ros/spawn_model)
+
+ROS_MASTER_URI=http://localhost:11311
+
+core service [/rosout] found
+process[urdf_spawner-1]: started with pid [8579]
+IHMC ROS API node successfully started.
+> Building 50% > :runJavaDelegatespawn_model script started
+[INFO] [WallTime: 1484417326.853991] [0.000000] Loading model xml from ros parameter
+[INFO] [WallTime: 1484417326.866285] [0.000000] Waiting for service /gazebo/spawn_urdf_model
+[INFO] [WallTime: 1484417326.868284] [0.000000] Calling service /gazebo/spawn_urdf_model
+Warning [parser.cc:778] XML Element[imuTransform], child of element[sensor] not defined in SDF. Ignoring[imuTransform]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[port], child of element[sensor] not defined in SDF. Ignoring[port]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[imuTransform], child of element[sensor] not defined in SDF. Ignoring[imuTransform]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[port], child of element[sensor] not defined in SDF. Ignoring[port]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[sensor_number], child of element[sensor] not defined in SDF. Ignoring[sensor_number]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[sensor_number], child of element[sensor] not defined in SDF. Ignoring[sensor_number]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[imuTransform], child of element[sensor] not defined in SDF. Ignoring[imuTransform]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[port], child of element[sensor] not defined in SDF. Ignoring[port]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+[ INFO] [1484417327.370499527, 7.000000000]: [INFO] (NetworkParameters.java:38): Looking for network parameters in network parameters file at /home/tim/.ihmc/IHMCNetworkParameters.ini
+[ INFO] [1484417327.370770246, 7.000000000]: [INFO] (NetworkParameters.java:42): Found Network parameters file at /home/tim/.ihmc/IHMCNetworkParameters.ini
+[ INFO] [1484417327.371135080, 7.000000000]: [INFO] (NetworkParameters.java:69): Looking for network parameters in environment variables
+[ INFO] [1484417327.371290602, 7.000000000]: [INFO] (NetworkParameters.java:70): Environment variables will override entries in the network parameters file.
+Attaching native thread 8660 with priority 45 to JVM
+[Wrn] [Event.cc:87] Warning: Deleteing a connection right after creation. Make sure to save the ConnectionPtr from a Connect call
+[ INFO] [1484417327.723275668, 7.000000000]: Looking for forceSensorDefinition leftAnkleRoll
+[ INFO] [1484417327.730947209, 7.000000000]: Looking for forceSensorDefinition rightAnkleRoll
+[ INFO] [1484417327.768845658, 7.000000000]: Camera Plugin (robotNamespace = /), Info: Using the 'robotNamespace' param: '/'
+[ INFO] [1484417327.769276809, 7.000000000]: Camera Plugin (robotNamespace = /), Info: Using the 'robotNamespace' param: '/'
+[ INFO] [1484417327.772445538, 7.000000000]: Camera Plugin (ns = /)  <tf_prefix_>, set to ""
+[ INFO] [1484417327.775023427, 7.000000000]: Camera Plugin (ns = /)  <tf_prefix_>, set to ""
+[ INFO] [1484417327.787884988, 7.000000000]: Laser Plugin (robotNamespace = /), Info: Using the 'robotNamespace' param: '/'
+[ INFO] [1484417327.788000773, 7.000000000]: Starting GazeboRosLaser Plugin (ns = /)!
+[Wrn] [msgs.cc:1807] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[imu] not suppported.
+[ INFO] [1484417327.803443718, 7.000000000]: GPU Laser Plugin (ns = /) <tf_prefix_>, set to ""
+[ INFO] [1484417327.805086751, 7.000000000]: LoadThread function completed
+[Wrn] [msgs.cc:1807] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[multicamera] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[gpu_ray] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[force_torque] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[force_torque] not suppported.
+[INFO] [WallTime: 1484417327.833245] [7.000000] Spawn status: SpawnModel: Successfully spawned model
+[Wrn] [ColladaLoader.cc:1461] Polylist input semantic: 'COLOR' is currently not supported
+[Wrn] [msgs.cc:1807] Conversion of sensor type[force_torque] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[force_torque] not suppported.
+[ INFO] [1484417328.086618198, 7.000000000]: SharedMemoryInterfacePlugin: Loading
+2017-01-14 13:08:48 localhost ncl_cpp: [WARN    ] [gov.nasa.SharedMemorySimInterfacePlugin.findUrdfSensors] Possibly missing an api or node tag from one or more imu sensors
+2017-01-14 13:08:48 localhost ncl_cpp: [WARN    ] [gov.nasa.SharedMemorySimInterfacePlugin.findUrdfSensors] Imu sensor head_imu_sensor doesn't have <imuTransform> tag. It is likely that the data you receive from this sensor will be incorrect.
+[ INFO] [1484417328.130218685, 7.000000000]: SharedMemorySimInterfacePlugin: Loading complete!
+[urdf_spawner-1] process has finished cleanly
+log file: /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/urdf_spawner-1*.log
+all processes on machine have died, roslaunch will exit
+[ INFO] [1484417328.534483016, 7.000000000]: imu plugin missing <frameName>, defaults to <bodyName>
+[ INFO] [1484417328.534697859, 7.000000000]: imu plugin missing <frameName>, defaults to <bodyName>
+[ INFO] [1484417328.534880802, 7.000000000]: imu plugin missing <frameName>, defaults to <bodyName>
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+[Wrn] [msgs.cc:1807] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[multicamera] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[gpu_ray] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[force_torque] not suppported.
+[Wrn] [msgs.cc:1807] Conversion of sensor type[force_torque] not suppported.
+[urdf_spawner_tim_Z97X_6827_4816338517619465102-8] process has finished cleanly
+log file: /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/urdf_spawner_tim_Z97X_6827_4816338517619465102-8*.log
+[ INFO] [1484417329.541045183, 7.247000000]: advertised as /multisense/image_points2
+
+[ INFO] [1484417329.550270872, 7.249000000]: advertised as /multisense/image_points2_color
+
+[ INFO] [1484417329.687966441, 7.283000000]: IMUBasedPelvisRotationalStateUpdater: More than 1 IMU sensor, using only the first one: pelvis_pelvisRearImu
+[ INFO] [1484417329.727113481, 7.291000000]: PelvisIMUBasedLinearStateCalculator: More than 1 IMU sensor, using only the first one: pelvis_pelvisRearImu
+Attaching native thread 8785 with priority 45 to JVM
+[ INFO] [1484417331.649290768, 7.655000000]: [INFO] (LogSessionBroadcaster.java:66): Announcing logging session on: name:lo (lo)
+[ INFO] [1484417331.710913930, 7.668000000]: [INFO] (LogSessionBroadcaster.java:307): Trying port 56391
+[INFO] (KryoObjectClient.java:130): Success! Connected KryoClient to SCS at ip localhost/127.0.0.1 on port 4895
+> Building 50% > :runJavaDelegateAttaching native thread 8817 with priority 40 to JVM
+[ INFO] [1484417337.967688899, 8.994000000]: [INFO] (ValkyrieRosControlController.java:307): Running with blocking synchronous execution between estimator and controller
+[INFO] [WallTime: 1484417338.099061] [9.027000] Controller Spawner: Loaded controllers: ihmc_valkyrie_control_java_bridge
+[INFO] [WallTime: 1484417338.502666] [9.127000] Started controllers: ihmc_valkyrie_control_java_bridge
+INIT: Lower harness
+publishing and latching message for 3.0 seconds
+INIT: Wait 5s (ROS time) to be lowered
+INIT: Switch to high level control
+publishing and latching message for 3.0 seconds
+INIT: Wait 2s (ROS time) for control to be switched
+INIT: Detach from harness
+INIT: Done
+[startup_robot-12] process has finished cleanly
+log file: /home/tim/.ros/log/7964ea54-da84-11e6-8576-74da386b9608/startup_robot-12*.log
+publishing and latching message for 3.0 seconds

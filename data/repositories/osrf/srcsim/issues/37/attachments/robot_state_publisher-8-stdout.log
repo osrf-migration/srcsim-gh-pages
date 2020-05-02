@@ -1,0 +1,2 @@
+[33m[ WARN] [1480666854.766390008]: The 'state_publisher' executable is deprecated. Please use 'robot_state_publisher' instead[0m
+[33m[ WARN] [1480666854.775673027]: The root link pelvis has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.[0m

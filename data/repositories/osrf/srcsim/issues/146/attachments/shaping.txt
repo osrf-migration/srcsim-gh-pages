@@ -1,0 +1,40 @@
+Command sequence performed below.
+
+No observable change in bandwidth or latency was found.
+
+----
+wget https://bitbucket.org/osrf/srcsim/raw/296baf70dbd5c48426c2fa088c5de2ccbdab68fe/scripts/src_tc.rb
+--2017-06-02 20:39:08--  https://bitbucket.org/osrf/srcsim/raw/296baf70dbd5c48426c2fa088c5de2ccbdab68fe/scripts/src_tc.rb
+Resolving bitbucket.org (bitbucket.org)... 104.192.143.1, 104.192.143.2, 104.192.143.3, ...
+Connecting to bitbucket.org (bitbucket.org)|104.192.143.1|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3026 (3.0K) [text/plain]
+Saving to: ‘src_tc.rb’
+
+src_tc.rb                           100%[=================================================================>]   2.96K  --.-KB/s    in 0s      
+
+2017-06-02 20:39:09 (752 MB/s) - ‘src_tc.rb’ saved [3026/3026]
+
+root@ip-172-31-3-111:/tmp# chmod a+rx src_tc.rb 
+root@ip-172-31-3-111:/tmp# ./src_tc.rb -i tap0 -d 1kbit -u 1kbit -f 192.168.2.150 --latency 1000ms
+RTNETLINK answers: File exists
+root@ip-172-31-3-111:/tmp# ping 192.168.2.10
+PING 192.168.2.10 (192.168.2.10): 56 data bytes
+64 bytes from 192.168.2.10: icmp_seq=0 ttl=64 time=0.053 ms
+64 bytes from 192.168.2.10: icmp_seq=1 ttl=64 time=0.021 ms
+64 bytes from 192.168.2.10: icmp_seq=2 ttl=64 time=0.023 ms
+^C--- 192.168.2.10 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max/stddev = 0.021/0.032/0.053/0.000 ms
+
+---
+From the 'operator computer' side:
+
+ping 192.168.2.150
+PING 192.168.2.150 (192.168.2.150) 56(84) bytes of data.
+64 bytes from 192.168.2.150: icmp_seq=1 ttl=64 time=0.019 ms
+64 bytes from 192.168.2.150: icmp_seq=2 ttl=64 time=0.020 ms
+64 bytes from 192.168.2.150: icmp_seq=3 ttl=64 time=0.020 ms
+64 bytes from 192.168.2.150: icmp_seq=4 ttl=64 time=0.021 ms
+
+

@@ -1,0 +1,777 @@
+[rosmaster.main][INFO] 2016-12-02 02:20:54,641: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2016-12-02 02:20:54,641: Starting ROS Master Node
+[xmlrpc][INFO] 2016-12-02 02:20:54,642: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2016-12-02 02:20:54,642: Started XML-RPC server [http://MysticLakeLinux:11311/]
+[xmlrpc][INFO] 2016-12-02 02:20:54,642: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2016-12-02 02:20:54,642: Master initialized: port[11311], uri[http://MysticLakeLinux:11311/]
+[rosmaster.master][INFO] 2016-12-02 02:20:54,676: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,677: +PARAM [/roslaunch/uris/host_mysticlakelinux__40200] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,713: +PARAM [/use_sim_time] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/joint_state_controller/publish_rate] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/robot_description] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/joint_state_controller/type] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/ihmc_ros/valkyrie/right_foot_frame_name] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/ihmc_ros/valkyrie/left_arm_joint_names] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/ihmc_ros/valkyrie/left_foot_frame_name] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/ihmc_valkyrie_control_java_bridge/main_class] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/multisense_points2_relay/lazy] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,714: +PARAM [/multisense_points2_color_relay/lazy] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,715: +PARAM [/multisense/camera/stereo_proc/disparity_range] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,715: +PARAM [/ihmc_ros/valkyrie/right_arm_joint_names] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,715: +PARAM [/multisense/camera/stereo_proc/approximate_sync] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,715: +PARAM [/ihmc_ros/robot_name] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,715: +SERVICE [/rosout/get_loggers] /rosout http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,715: +PARAM [/ihmc_valkyrie_control_java_bridge/working_dir] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,715: +PARAM [/valkyrie/robot_description] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,715: +PARAM [/ihmc_valkyrie_control_java_bridge/jvm_args] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,716: +SERVICE [/rosout/set_logger_level] /rosout http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,716: +PARAM [/ihmc_valkyrie_control_java_bridge/type] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:54,718: +SUB [/clock] /rosout http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,719: +PUB [/rosout_agg] /rosout http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,721: +SUB [/rosout] /rosout http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,758: +PUB [/rosout] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,759: +SERVICE [/robot_state_publisher/get_loggers] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,760: +SERVICE [/robot_state_publisher/set_logger_level] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,766: +SUB [/clock] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,776: +PUB [/tf] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,777: +PUB [/tf_static] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,785: +SUB [/ihmc_ros/valkyrie/output/joint_states] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,793: +PUB [/rosout] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,794: +SERVICE [/multisense_points2_relay/get_loggers] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,794: +SERVICE [/multisense_points2_relay/set_logger_level] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,795: +PUB [/rosout] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,796: +SERVICE [/multisense_points2_color_relay/get_loggers] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,797: +SERVICE [/multisense_points2_color_relay/set_logger_level] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,802: +SUB [/clock] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,805: +SUB [/clock] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,817: +SUB [/multisense/camera/points2] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,818: +PUB [/rosout] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,819: +SUB [/multisense/camera/points2] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,819: +SERVICE [/multisense/camera/stereo_proc/get_loggers] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,820: +SERVICE [/multisense/camera/stereo_proc/set_logger_level] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,824: +SUB [/clock] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,842: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,844: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,844: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,845: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,876: +SERVICE [/multisense/camera/stereo_proc_debayer_left/set_parameters] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,877: +PUB [/multisense/camera/stereo_proc_debayer_left/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,877: +PUB [/multisense/camera/stereo_proc_debayer_left/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,878: +PARAM [/multisense/camera/stereo_proc_debayer_left/debayer] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,878: +PARAM [/multisense/camera/stereo_proc_debayer_left/debayer] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,899: +PUB [/multisense/camera/left/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,900: +PUB [/multisense/camera/left/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,901: +SERVICE [/multisense/camera/stereo_proc_rectify_mono_left/set_parameters] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,902: +PUB [/multisense/camera/stereo_proc_rectify_mono_left/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,902: +PUB [/multisense/camera/stereo_proc_rectify_mono_left/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,903: +PARAM [/multisense/camera/stereo_proc_rectify_mono_left/interpolation] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,903: +PARAM [/multisense/camera/stereo_proc_rectify_mono_left/interpolation] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,907: +PUB [/rosout] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,908: +SERVICE [/gazebo/get_loggers] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,908: +SERVICE [/gazebo/set_logger_level] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,911: +SUB [/clock] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,925: +PUB [/multisense/camera/left/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,926: +SERVICE [/multisense/camera/stereo_proc_rectify_color_left/set_parameters] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,927: +PUB [/multisense/camera/stereo_proc_rectify_color_left/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,928: +PUB [/multisense/camera/stereo_proc_rectify_color_left/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,929: +PARAM [/multisense/camera/stereo_proc_rectify_color_left/interpolation] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,929: +PARAM [/multisense/camera/stereo_proc_rectify_color_left/interpolation] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,943: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,950: +PUB [/multisense/camera/left/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,951: +SERVICE [/multisense/camera/stereo_proc_debayer_right/set_parameters] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,951: +PUB [/multisense/camera/stereo_proc_debayer_right/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,952: +PUB [/multisense/camera/stereo_proc_debayer_right/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,952: +PARAM [/multisense/camera/stereo_proc_debayer_right/debayer] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,953: +PARAM [/multisense/camera/stereo_proc_debayer_right/debayer] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,977: +PUB [/multisense/camera/right/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,977: +PUB [/multisense/camera/right/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,979: +SERVICE [/multisense/camera/stereo_proc_rectify_mono_right/set_parameters] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,980: +PUB [/multisense/camera/stereo_proc_rectify_mono_right/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,981: +PUB [/multisense/camera/stereo_proc_rectify_mono_right/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:54,981: +PARAM [/multisense/camera/stereo_proc_rectify_mono_right/interpolation] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:54,982: +PARAM [/multisense/camera/stereo_proc_rectify_mono_right/interpolation] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,004: +PUB [/multisense/camera/right/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,006: +SERVICE [/multisense/camera/stereo_proc_rectify_color_right/set_parameters] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,006: +PUB [/multisense/camera/stereo_proc_rectify_color_right/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,007: +PUB [/multisense/camera/stereo_proc_rectify_color_right/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,012: +PARAM [/multisense/camera/stereo_proc_rectify_color_right/interpolation] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,013: +PARAM [/multisense/camera/stereo_proc_rectify_color_right/interpolation] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,043: +PUB [/multisense/camera/right/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,076: +SERVICE [/multisense/camera/stereo_proc/set_parameters] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,077: +PUB [/multisense/camera/stereo_proc/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,077: +PUB [/multisense/camera/stereo_proc/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,082: +PARAM [/multisense/camera/stereo_proc/stereo_algorithm] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,083: +PARAM [/multisense/camera/stereo_proc/prefilter_size] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,083: +PARAM [/multisense/camera/stereo_proc/prefilter_cap] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,084: +PARAM [/multisense/camera/stereo_proc/correlation_window_size] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,084: +PARAM [/multisense/camera/stereo_proc/min_disparity] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,084: +PARAM [/multisense/camera/stereo_proc/disparity_range] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,085: +PARAM [/multisense/camera/stereo_proc/uniqueness_ratio] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,085: +PARAM [/multisense/camera/stereo_proc/texture_threshold] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,086: +PARAM [/multisense/camera/stereo_proc/speckle_size] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,086: +PARAM [/multisense/camera/stereo_proc/speckle_range] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,086: +PARAM [/multisense/camera/stereo_proc/fullDP] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,087: +PARAM [/multisense/camera/stereo_proc/P1] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,087: +PARAM [/multisense/camera/stereo_proc/P2] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,088: +PARAM [/multisense/camera/stereo_proc/disp12MaxDiff] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,088: +PARAM [/multisense/camera/stereo_proc/stereo_algorithm] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,089: +PARAM [/multisense/camera/stereo_proc/prefilter_size] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,089: +PARAM [/multisense/camera/stereo_proc/prefilter_cap] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,089: +PARAM [/multisense/camera/stereo_proc/correlation_window_size] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,090: +PARAM [/multisense/camera/stereo_proc/min_disparity] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,090: +PARAM [/multisense/camera/stereo_proc/disparity_range] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,091: +PARAM [/multisense/camera/stereo_proc/uniqueness_ratio] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,091: +PARAM [/multisense/camera/stereo_proc/texture_threshold] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,091: +PARAM [/multisense/camera/stereo_proc/speckle_size] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,092: +PARAM [/multisense/camera/stereo_proc/speckle_range] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,092: +PARAM [/multisense/camera/stereo_proc/fullDP] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,093: +PARAM [/multisense/camera/stereo_proc/P1] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,093: +PARAM [/multisense/camera/stereo_proc/P2] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,093: +PARAM [/multisense/camera/stereo_proc/disp12MaxDiff] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,094: +PUB [/multisense/camera/disparity] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,094: +PARAM [/multisense/camera/stereo_proc_point_cloud2] by /multisense/camera/stereo_proc
+[rosmaster.master][INFO] 2016-12-02 02:20:55,096: +PUB [/multisense/camera/points2] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,143: publisherUpdate[/multisense/camera/points2] -> http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,144: publisherUpdate[/multisense/camera/points2] -> http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,154: +PUB [/rosout] /controller_spawner_MysticLakeLinux_14829_4854955791025789176 http://MysticLakeLinux:46635/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,158: +SUB [/clock] /controller_spawner_MysticLakeLinux_14829_4854955791025789176 http://MysticLakeLinux:46635/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,159: +SERVICE [/controller_spawner_MysticLakeLinux_14829_4854955791025789176/get_loggers] /controller_spawner_MysticLakeLinux_14829_4854955791025789176 http://MysticLakeLinux:46635/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,160: +SERVICE [/controller_spawner_MysticLakeLinux_14829_4854955791025789176/set_logger_level] /controller_spawner_MysticLakeLinux_14829_4854955791025789176 http://MysticLakeLinux:46635/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,245: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,316: +PUB [/clock] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,317: +SERVICE [/gazebo/spawn_gazebo_model] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,318: +SERVICE [/gazebo/spawn_sdf_model] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,318: +SERVICE [/gazebo/spawn_urdf_model] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,319: +SERVICE [/gazebo/delete_model] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,320: +SERVICE [/gazebo/get_model_properties] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,321: +SERVICE [/gazebo/get_model_state] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,321: +SERVICE [/gazebo/get_world_properties] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,322: +SERVICE [/gazebo/get_joint_properties] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,323: +SERVICE [/gazebo/get_link_properties] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,324: +SERVICE [/gazebo/get_link_state] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,324: +SERVICE [/gazebo/get_physics_properties] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,325: +PUB [/gazebo/link_states] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,326: +PUB [/gazebo/model_states] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,326: +SERVICE [/gazebo/set_link_properties] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,327: +SERVICE [/gazebo/set_physics_properties] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,328: +SERVICE [/gazebo/set_model_state] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,329: +SERVICE [/gazebo/set_model_configuration] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,329: +SERVICE [/gazebo/set_joint_properties] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,330: +SERVICE [/gazebo/set_link_state] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,333: +SUB [/gazebo/set_link_state] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,336: +SUB [/gazebo/set_model_state] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,337: +SERVICE [/gazebo/pause_physics] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,338: +SERVICE [/gazebo/unpause_physics] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,338: +SERVICE [/gazebo/apply_body_wrench] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,339: +SERVICE [/gazebo/apply_joint_effort] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,340: +SERVICE [/gazebo/clear_joint_forces] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,341: +SERVICE [/gazebo/clear_body_wrenches] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,341: +SERVICE [/gazebo/reset_simulation] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,341: +SERVICE [/gazebo/reset_world] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,342: +PARAM [/use_sim_time] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:55,345: publisherUpdate[/clock] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,347: publisherUpdate[/clock] -> http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,347: publisherUpdate[/clock] -> http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,348: publisherUpdate[/clock] -> http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,352: publisherUpdate[/clock] -> http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,352: publisherUpdate[/clock] -> http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,353: publisherUpdate[/clock] -> http://MysticLakeLinux:46635/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,370: +SUB [/multisense/camera/left/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,374: +SUB [/multisense/camera/left/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,381: +SUB [/multisense/camera/right/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,385: +SUB [/multisense/camera/disparity] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,397: +SUB [/multisense/camera/left/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,416: +SUB [/multisense/camera/left/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,422: +SUB [/multisense/camera/right/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,431: +SUB [/multisense/camera/left/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,446: +SUB [/multisense/camera/left/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,456: +SUB [/multisense/camera/right/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:55,478: +SUB [/multisense/camera/right/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:20:56,154: +SUB [/srcsim/qual1/start] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:56,157: +SUB [/srcsim/qual1/light] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:56,187: +SERVICE [/gazebo/set_parameters] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:56,188: +PUB [/gazebo/parameter_descriptions] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:56,189: +PUB [/gazebo/parameter_updates] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:20:56,200: +PARAM [/gazebo/time_step] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,200: +PARAM [/gazebo/max_update_rate] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,201: +PARAM [/gazebo/gravity_x] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,202: +PARAM [/gazebo/gravity_y] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,203: +PARAM [/gazebo/gravity_z] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,203: +PARAM [/gazebo/auto_disable_bodies] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,204: +PARAM [/gazebo/sor_pgs_precon_iters] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,204: +PARAM [/gazebo/sor_pgs_iters] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,205: +PARAM [/gazebo/sor_pgs_w] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,206: +PARAM [/gazebo/sor_pgs_rms_error_tol] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,207: +PARAM [/gazebo/cfm] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,207: +PARAM [/gazebo/erp] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,208: +PARAM [/gazebo/contact_surface_layer] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,209: +PARAM [/gazebo/contact_max_correcting_vel] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,209: +PARAM [/gazebo/max_contacts] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,212: +PARAM [/gazebo/time_step] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,213: +PARAM [/gazebo/max_update_rate] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,214: +PARAM [/gazebo/gravity_x] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,214: +PARAM [/gazebo/gravity_y] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,215: +PARAM [/gazebo/gravity_z] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,216: +PARAM [/gazebo/auto_disable_bodies] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,216: +PARAM [/gazebo/sor_pgs_precon_iters] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,217: +PARAM [/gazebo/sor_pgs_iters] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,218: +PARAM [/gazebo/sor_pgs_w] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,219: +PARAM [/gazebo/sor_pgs_rms_error_tol] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,220: +PARAM [/gazebo/cfm] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,220: +PARAM [/gazebo/erp] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,221: +PARAM [/gazebo/contact_surface_layer] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,222: +PARAM [/gazebo/contact_max_correcting_vel] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:56,223: +PARAM [/gazebo/max_contacts] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:20:59,025: +PARAM [/roslaunch/uris/host_mysticlakelinux__44531] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:59,027: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:59,027: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:20:59,154: +PUB [/rosout] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,155: +SERVICE [/controller_manager_MysticLakeLinux_15534_7519392830653010679/get_loggers] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,156: +SERVICE [/controller_manager_MysticLakeLinux_15534_7519392830653010679/set_logger_level] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,159: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,162: +SUB [/clock] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,381: +PUB [/hardware_joint_states] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,382: +PUB [/hardware_joint_commands] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,383: +PUB [/force_torque_states] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,384: +PUB [/imu_states] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,677: +SERVICE [/controller_manager/list_controllers] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,678: +SERVICE [/controller_manager/list_controller_types] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,678: +SERVICE [/controller_manager/load_controller] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,679: +SERVICE [/controller_manager/unload_controller] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,679: +SERVICE [/controller_manager/switch_controller] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,680: +SERVICE [/controller_manager/reload_controller_libraries] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,680: +PUB [/rtt_period_overflow] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:20:59,681: +PUB [/rtt_rate] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,548: +PUB [/rosout] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,548: +PUB [/rosout] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,552: +PUB [/rosout] /ihmc_ros/valkyrie/robot_data http://127.0.0.1:35524/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,562: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,563: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,563: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,601: +SUB [/clock] /ihmc_ros/valkyrie/robot_data http://127.0.0.1:35524/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,601: +SUB [/clock] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,629: +PUB [/ihmc_ros/valkyrie/control/hand_desired_configuration] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,638: +SUB [/clock] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,668: +PUB [/ihmc_ros/valkyrie/control/go_home] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,670: +PUB [/ihmc_ros/valkyrie/control/head_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,683: +PUB [/ihmc_ros/valkyrie/control/arm_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,685: +PUB [/ihmc_ros/valkyrie/control/abort_walking] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,693: +SUB [/ihmc_ros/valkyrie/control/go_home] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,716: +PUB [/ihmc_ros/valkyrie/control/pelvis_orientation_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,721: +PUB [/ihmc_ros/valkyrie/control/arm_desired_joint_accelerations] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,726: +SUB [/ihmc_ros/valkyrie/control/hand_desired_configuration] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,820: +SUB [/ihmc_ros/valkyrie/control/arm_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,826: +SUB [/ihmc_ros/valkyrie/control/head_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,828: +PUB [/ihmc_ros/valkyrie/control/pelvis_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,871: +SUB [/ihmc_ros/valkyrie/control/abort_walking] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,944: +SUB [/ihmc_ros/valkyrie/control/pelvis_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,947: +SUB [/ihmc_ros/valkyrie/control/pelvis_orientation_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,962: +SUB [/ihmc_ros/valkyrie/control/arm_desired_joint_accelerations] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,963: +PUB [/ihmc_ros/valkyrie/control/neck_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,964: +SUB [/ihmc_ros/valkyrie/control/neck_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,965: +SUB [/ihmc_ros/valkyrie/control/footstep_list] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,965: +PUB [/ihmc_ros/valkyrie/control/high_level_state] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,966: +PUB [/ihmc_ros/valkyrie/control/footstep_list] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,967: +PUB [/ihmc_ros/valkyrie/control/neck_desired_acceleration] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,969: +PUB [/ihmc_ros/valkyrie/control/whole_body_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:00,981: +SUB [/ihmc_ros/valkyrie/control/high_level_state] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,039: +PUB [/ihmc_ros/valkyrie/control/end_effector_load_bearing] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,051: +SUB [/ihmc_ros/valkyrie/control/end_effector_load_bearing] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,064: publisherUpdate[/ihmc_ros/valkyrie/control/footstep_list] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,073: +SUB [/ihmc_ros/valkyrie/control/neck_desired_acceleration] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,094: +PARAM [/roslaunch/uris/host_mysticlakelinux__37485] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:21:01,100: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:21:01,101: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2016-12-02 02:21:01,109: +SUB [/ihmc_ros/valkyrie/control/whole_body_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,135: +PUB [/ihmc_ros/valkyrie/control/stop_all_trajectories] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,138: +SUB [/ihmc_ros/valkyrie/control/stop_all_trajectories] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,216: +PUB [/ihmc_ros/valkyrie/control/pelvis_height_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,219: +PUB [/ihmc_ros/valkyrie/control/pause_walking] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,269: +PUB [/ihmc_ros/valkyrie/control/hand_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,270: +SUB [/ihmc_ros/valkyrie/control/hand_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,271: +SUB [/ihmc_ros/valkyrie/control/foot_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,272: +SUB [/ihmc_ros/valkyrie/control/pelvis_height_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,273: +SUB [/ihmc_ros/valkyrie/control/chest_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,274: +PUB [/ihmc_ros/valkyrie/control/foot_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,274: +SUB [/ihmc_ros/valkyrie/control/request_stop] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,277: +PUB [/ihmc_ros/valkyrie/control/chest_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,281: +SUB [/ihmc_ros/localization/pelvis_pose_correction] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,291: +SUB [/ihmc_ros/valkyrie/control/low_level_control_mode] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,308: +SUB [/ihmc_ros/valkyrie/control/pause_walking] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,311: publisherUpdate[/ihmc_ros/valkyrie/control/foot_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,320: +SUB [/ihmc_ros/localization/pelvis_odom_pose_correction] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,324: publisherUpdate[/ihmc_ros/valkyrie/control/chest_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,447: +PUB [/ihmc_ros/valkyrie/output/high_level_state] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,448: +PUB [/ihmc_ros/valkyrie/output/capturability/left_foot_support_polygon] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,450: +PUB [/ihmc_ros/valkyrie/output/capturability/right_foot_support_polygon] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,456: +PUB [/ihmc_ros/valkyrie/output/capturability/capture_point] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,461: +PUB [/ihmc_ros/valkyrie/output/capturability/desired_capture_point] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,461: +PUB [/ihmc_ros/valkyrie/output/capturability/center_of_mass] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,464: +PUB [/ihmc_ros/valkyrie/output/capturability/is_in_double_support] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,466: +PUB [/tf] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,469: +PUB [/ihmc_ros/valkyrie/output/imu/pelvis_pelvisMiddleImu] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,472: +PUB [/ihmc_ros/valkyrie/output/imu/pelvis_pelvisRearImu] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,474: +PUB [/ihmc_ros/valkyrie/output/imu/torso_leftTorsoImu] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,476: +PUB [/ihmc_ros/valkyrie/output/imu/upperNeckPitchLink_head_imu_sensor] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,479: +PUB [/ihmc_ros/valkyrie/output/joint_states] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,482: +PUB [/ihmc_ros/valkyrie/output/robot_pose] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,486: +PUB [/ihmc_ros/valkyrie/output/robot_motion_status] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,489: +PUB [/ihmc_ros/valkyrie/output/behavior] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,495: +PUB [/ihmc_ros/valkyrie/output/foot_force_sensor/right] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,505: +PUB [/ihmc_ros/valkyrie/output/foot_force_sensor/left] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,506: +PUB [/ihmc_ros/valkyrie/output/high_level_state_change] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,518: +PUB [/ihmc_ros/valkyrie/output/walking_status] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,519: +PUB [/rosout] /urdf_spawner http://MysticLakeLinux:41633/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,521: +PUB [/ihmc_ros/valkyrie/output/footstep_status] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,523: +SUB [/clock] /urdf_spawner http://MysticLakeLinux:41633/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,526: +SERVICE [/urdf_spawner/get_loggers] /urdf_spawner http://MysticLakeLinux:41633/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,527: +SERVICE [/urdf_spawner/set_logger_level] /urdf_spawner http://MysticLakeLinux:41633/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,563: publisherUpdate[/ihmc_ros/valkyrie/output/joint_states] -> http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:21:01,563: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,367: +SERVICE [/multisense/camera/left/set_camera_info] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,370: +SERVICE [/multisense/camera/right/set_camera_info] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,372: +SERVICE [/multisense/camera/left/set_parameters] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,373: +PUB [/multisense/camera/left/parameter_descriptions] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,374: +SERVICE [/multisense/camera/right/set_parameters] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,374: +PUB [/multisense/camera/left/parameter_updates] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,375: +PUB [/multisense/camera/right/parameter_descriptions] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,375: +PUB [/multisense/camera/right/parameter_updates] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,376: +PARAM [/multisense/camera/left/imager_rate] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:21:02,377: +PARAM [/multisense/camera/left/imager_rate] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:21:02,412: +PARAM [/multisense/camera/right/imager_rate] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:21:02,413: +PARAM [/multisense/camera/right/imager_rate] by /gazebo
+[rosmaster.master][INFO] 2016-12-02 02:21:02,418: +PUB [/multisense/camera/left/image_raw] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,418: +PUB [/multisense/camera/left/camera_info] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,442: +PUB [/multisense/camera/right/image_raw] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,443: +PUB [/multisense/camera/right/camera_info] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,465: publisherUpdate[/multisense/camera/left/image_raw] -> http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,466: publisherUpdate[/multisense/camera/left/camera_info] -> http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,466: publisherUpdate[/multisense/camera/right/image_raw] -> http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,467: publisherUpdate[/multisense/camera/right/camera_info] -> http://MysticLakeLinux:46528/
+[rosmaster.master][ERROR] 2016-12-02 02:21:02,573: Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosmaster/master_api.py", line 177, in validated_f
+    code, msg, val = f(*newArgs, **kwds)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosmaster/master_api.py", line 425, in searchParam
+    search_key = self.param_server.search_param(caller_id, key)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosmaster/paramserver.py", line 116, in search_param
+    raise ValueError("namespace must be global")
+ValueError: namespace must be global
+
+[rosmaster.master][INFO] 2016-12-02 02:21:02,574: +PUB [/multisense/lidar_scan] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,592: -SUB [/clock] /urdf_spawner http://MysticLakeLinux:41633/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,592: -PUB [/rosout] /urdf_spawner http://MysticLakeLinux:41633/
+[rosmaster.master][INFO] 2016-12-02 02:21:02,593: -SERVICE [/urdf_spawner/set_logger_level] /urdf_spawner rosrpc://MysticLakeLinux:42597
+[rosmaster.master][INFO] 2016-12-02 02:21:02,593: -SERVICE [/urdf_spawner/get_loggers] /urdf_spawner rosrpc://MysticLakeLinux:42597
+[rosmaster.master][INFO] 2016-12-02 02:21:02,667: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,032: +PUB [/multisense/joint_states] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,033: +PUB [/multisense/imu] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,037: +SUB [/multisense/set_spindle_speed] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,041: +SUB [/multisense/fps] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,044: +SUB [/multisense/set_fps] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,046: +PUB [/leftTorsoImu/imu] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,046: +PUB [/pelvisRearImu/imu] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,047: +SERVICE [/pelvisRearImu/imu_service] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,048: +SERVICE [/leftTorsoImu/imu_service] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,050: +SUB [/valkyrie/harness/velocity] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,051: +PUB [/pelvisMiddleImu/imu] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,052: +SERVICE [/pelvisMiddleImu/imu_service] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:03,054: +SUB [/valkyrie/harness/detach] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:06,391: +PUB [/multisense/image_points2_color] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:21:06,392: +PUB [/multisense/image_points2] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:21:06,392: -SUB [/multisense/camera/points2] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:21:06,393: -SUB [/multisense/camera/points2] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,445: -SUB [/multisense/camera/left/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,445: -SUB [/multisense/camera/disparity] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,446: -SUB [/multisense/camera/left/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,446: -SUB [/multisense/camera/right/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,447: -SUB [/multisense/camera/left/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,447: -SUB [/multisense/camera/left/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,448: -SUB [/multisense/camera/right/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,448: -SUB [/multisense/camera/left/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,449: -SUB [/multisense/camera/right/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,449: -SUB [/multisense/camera/left/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:07,449: -SUB [/multisense/camera/right/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:21:54,958: +SERVICE [/rostopic_16960_1480666914835/get_loggers] /rostopic_16960_1480666914835 http://MysticLakeLinux:44630/
+[rosmaster.master][INFO] 2016-12-02 02:21:54,959: +SERVICE [/rostopic_16960_1480666914835/set_logger_level] /rostopic_16960_1480666914835 http://MysticLakeLinux:44630/
+[rosmaster.master][INFO] 2016-12-02 02:21:54,960: +PUB [/valkyrie/harness/velocity] /rostopic_16960_1480666914835 http://MysticLakeLinux:44630/
+[rosmaster.master][INFO] 2016-12-02 02:21:55,027: publisherUpdate[/valkyrie/harness/velocity] -> http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:21:57,964: -PUB [/valkyrie/harness/velocity] /rostopic_16960_1480666914835 http://MysticLakeLinux:44630/
+[rosmaster.master][INFO] 2016-12-02 02:21:57,965: -SERVICE [/rostopic_16960_1480666914835/get_loggers] /rostopic_16960_1480666914835 rosrpc://MysticLakeLinux:33369
+[rosmaster.master][INFO] 2016-12-02 02:21:57,965: -SERVICE [/rostopic_16960_1480666914835/set_logger_level] /rostopic_16960_1480666914835 rosrpc://MysticLakeLinux:33369
+[rosmaster.master][INFO] 2016-12-02 02:21:58,032: publisherUpdate[/valkyrie/harness/velocity] -> http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:22:18,283: +SERVICE [/rostopic_16989_1480666938161/get_loggers] /rostopic_16989_1480666938161 http://MysticLakeLinux:37993/
+[rosmaster.master][INFO] 2016-12-02 02:22:18,284: +SERVICE [/rostopic_16989_1480666938161/set_logger_level] /rostopic_16989_1480666938161 http://MysticLakeLinux:37993/
+[rosmaster.master][INFO] 2016-12-02 02:22:18,285: +PUB [/ihmc_ros/valkyrie/control/low_level_control_mode] /rostopic_16989_1480666938161 http://MysticLakeLinux:37993/
+[rosmaster.master][INFO] 2016-12-02 02:22:18,356: publisherUpdate[/ihmc_ros/valkyrie/control/low_level_control_mode] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:22:21,289: -PUB [/ihmc_ros/valkyrie/control/low_level_control_mode] /rostopic_16989_1480666938161 http://MysticLakeLinux:37993/
+[rosmaster.master][INFO] 2016-12-02 02:22:21,290: -SERVICE [/rostopic_16989_1480666938161/get_loggers] /rostopic_16989_1480666938161 rosrpc://MysticLakeLinux:33162
+[rosmaster.master][INFO] 2016-12-02 02:22:21,290: -SERVICE [/rostopic_16989_1480666938161/set_logger_level] /rostopic_16989_1480666938161 rosrpc://MysticLakeLinux:33162
+[rosmaster.master][INFO] 2016-12-02 02:22:21,360: publisherUpdate[/ihmc_ros/valkyrie/control/low_level_control_mode] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:22:26,610: +SERVICE [/rostopic_17025_1480666946486/get_loggers] /rostopic_17025_1480666946486 http://MysticLakeLinux:46458/
+[rosmaster.master][INFO] 2016-12-02 02:22:26,611: +SERVICE [/rostopic_17025_1480666946486/set_logger_level] /rostopic_17025_1480666946486 http://MysticLakeLinux:46458/
+[rosmaster.master][INFO] 2016-12-02 02:22:26,612: +PUB [/valkyrie/harness/detach] /rostopic_17025_1480666946486 http://MysticLakeLinux:46458/
+[rosmaster.master][INFO] 2016-12-02 02:22:26,669: publisherUpdate[/valkyrie/harness/detach] -> http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:22:29,617: -PUB [/valkyrie/harness/detach] /rostopic_17025_1480666946486 http://MysticLakeLinux:46458/
+[rosmaster.master][INFO] 2016-12-02 02:22:29,617: -SERVICE [/rostopic_17025_1480666946486/set_logger_level] /rostopic_17025_1480666946486 rosrpc://MysticLakeLinux:41488
+[rosmaster.master][INFO] 2016-12-02 02:22:29,617: -SERVICE [/rostopic_17025_1480666946486/get_loggers] /rostopic_17025_1480666946486 rosrpc://MysticLakeLinux:41488
+[rosmaster.master][INFO] 2016-12-02 02:22:29,672: publisherUpdate[/valkyrie/harness/detach] -> http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:25:50,863: +SERVICE [/rostopic_17068_1480667150599/get_loggers] /rostopic_17068_1480667150599 http://MysticLakeLinux:42704/
+[rosmaster.master][INFO] 2016-12-02 02:25:50,863: +SERVICE [/rostopic_17068_1480667150599/set_logger_level] /rostopic_17068_1480667150599 http://MysticLakeLinux:42704/
+[rosmaster.master][INFO] 2016-12-02 02:25:50,864: +PUB [/multisense/set_spindle_speed] /rostopic_17068_1480667150599 http://MysticLakeLinux:42704/
+[rosmaster.master][INFO] 2016-12-02 02:25:50,895: publisherUpdate[/multisense/set_spindle_speed] -> http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:25:53,869: -PUB [/multisense/set_spindle_speed] /rostopic_17068_1480667150599 http://MysticLakeLinux:42704/
+[rosmaster.master][INFO] 2016-12-02 02:25:53,869: -SERVICE [/rostopic_17068_1480667150599/set_logger_level] /rostopic_17068_1480667150599 rosrpc://MysticLakeLinux:42685
+[rosmaster.master][INFO] 2016-12-02 02:25:53,869: -SERVICE [/rostopic_17068_1480667150599/get_loggers] /rostopic_17068_1480667150599 rosrpc://MysticLakeLinux:42685
+[rosmaster.master][INFO] 2016-12-02 02:25:53,899: publisherUpdate[/multisense/set_spindle_speed] -> http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:26:27,682: +PUB [/rosout] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:27,682: +SERVICE [/rviz_1480667187679578664/get_loggers] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:27,683: +SERVICE [/rviz_1480667187679578664/set_logger_level] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:27,686: +SUB [/clock] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:27,737: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:26:27,890: +SUB [/tf] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:27,895: +SUB [/tf_static] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:28,085: +PUB [/initialpose] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:28,093: +PUB [/goal] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:28,997: +SUB [/multisense/camera/points2] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:28,999: -PUB [/goal] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:28,999: -PUB [/initialpose] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:29,003: +PUB [/initialpose] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:29,004: +PUB [/goal] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:29,004: +PUB [/move_base_simple/goal] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:29,005: -PUB [/goal] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:26:29,005: +PUB [/clicked_point] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,119: +PUB [/rosout] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,120: +SERVICE [/rviz_1480667220117203004/get_loggers] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,121: +SERVICE [/rviz_1480667220117203004/set_logger_level] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,124: +SUB [/clock] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,176: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,283: +SUB [/tf] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,286: +SUB [/tf_static] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,362: +PUB [/initialpose] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:00,363: +PUB [/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,098: +SUB [/multisense/camera/points2] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,099: -PUB [/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,100: -PUB [/initialpose] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,103: +PUB [/initialpose] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,104: +PUB [/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,105: +PUB [/move_base_simple/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,106: -PUB [/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,106: +PUB [/clicked_point] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,132: +SERVICE [/rviz_1480667220117203004/reload_shaders] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,284: +SUB [/multisense/camera/left/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,287: +SUB [/multisense/camera/left/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,289: +SUB [/multisense/camera/left/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,294: +SUB [/multisense/camera/right/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,297: +SUB [/multisense/camera/disparity] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,300: +SUB [/multisense/camera/left/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,302: +SUB [/multisense/camera/left/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,307: +SUB [/multisense/camera/left/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,310: +SUB [/multisense/camera/right/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,317: +SUB [/multisense/camera/right/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:01,322: +SUB [/multisense/camera/right/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,805: -SUB [/multisense/camera/points2] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,866: +SUB [/multisense/image_points2_color] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,871: -PUB [/clicked_point] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,872: -PUB [/move_base_simple/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,873: -PUB [/initialpose] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,876: +PUB [/initialpose] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,877: +PUB [/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,878: +PUB [/move_base_simple/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,878: -PUB [/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:10,879: +PUB [/clicked_point] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,001: +SUB [/multisense/camera/points2] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,021: -SUB [/multisense/camera/left/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,021: -SUB [/multisense/camera/disparity] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,022: -SUB [/multisense/camera/left/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,023: -SUB [/multisense/camera/left/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,023: -SUB [/multisense/camera/right/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,024: -SUB [/multisense/camera/left/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,024: -SUB [/multisense/camera/right/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,025: -SUB [/multisense/camera/left/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,025: -SUB [/multisense/camera/right/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,026: -SUB [/multisense/camera/right/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,026: -SUB [/multisense/camera/left/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,202: +SUB [/multisense/camera/left/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,206: +SUB [/multisense/camera/left/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,208: +SUB [/multisense/camera/left/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,213: +SUB [/multisense/camera/right/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,215: +SUB [/multisense/camera/left/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,218: +SUB [/multisense/camera/disparity] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,221: +SUB [/multisense/camera/left/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,225: +SUB [/multisense/camera/right/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,229: +SUB [/multisense/camera/left/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,234: +SUB [/multisense/camera/right/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:11,242: +SUB [/multisense/camera/right/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:29,326: -SUB [/multisense/image_points2_color] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:27:29,746: -SUB [/multisense/camera/points2] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,009: -SUB [/multisense/camera/left/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,010: -SUB [/multisense/camera/left/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,010: -SUB [/multisense/camera/disparity] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,013: -SUB [/multisense/camera/left/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,014: -SUB [/multisense/camera/left/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,015: -SUB [/multisense/camera/right/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,015: -SUB [/multisense/camera/left/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,016: -SUB [/multisense/camera/right/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,016: -SUB [/multisense/camera/left/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,017: -SUB [/multisense/camera/right/camera_info] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:27:30,017: -SUB [/multisense/camera/right/image_raw] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:28:47,076: +SUB [/multisense/camera/left/image_raw] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:47,078: +SUB [/multisense/camera/left/camera_info] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:52,173: -SUB [/multisense/camera/left/image_raw] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:52,174: -SUB [/multisense/camera/left/camera_info] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:52,180: +SUB [/multisense/camera/left/image_raw] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:52,182: +SUB [/multisense/camera/left/camera_info] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:54,157: -SUB [/multisense/camera/left/image_raw] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:54,158: -SUB [/multisense/camera/left/camera_info] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:54,163: +SUB [/multisense/camera/left/image_raw] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:28:54,166: +SUB [/multisense/camera/left/camera_info] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:31:23,409: +PUB [/rosout] /rostopic_17691_1480667483282 http://MysticLakeLinux:37858/
+[rosmaster.master][INFO] 2016-12-02 02:31:23,414: +SUB [/clock] /rostopic_17691_1480667483282 http://MysticLakeLinux:37858/
+[rosmaster.master][INFO] 2016-12-02 02:31:23,415: +SERVICE [/rostopic_17691_1480667483282/get_loggers] /rostopic_17691_1480667483282 http://MysticLakeLinux:37858/
+[rosmaster.master][INFO] 2016-12-02 02:31:23,416: +SERVICE [/rostopic_17691_1480667483282/set_logger_level] /rostopic_17691_1480667483282 http://MysticLakeLinux:37858/
+[rosmaster.master][INFO] 2016-12-02 02:31:23,470: +SUB [/ihmc_ros/valkyrie/control/neck_trajectory] /rostopic_17691_1480667483282 http://MysticLakeLinux:37858/
+[rosmaster.master][INFO] 2016-12-02 02:31:23,483: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:35:22,002: -SUB [/clock] /rostopic_17691_1480667483282 http://MysticLakeLinux:37858/
+[rosmaster.master][INFO] 2016-12-02 02:35:22,002: -SUB [/ihmc_ros/valkyrie/control/neck_trajectory] /rostopic_17691_1480667483282 http://MysticLakeLinux:37858/
+[rosmaster.master][INFO] 2016-12-02 02:35:22,002: -PUB [/rosout] /rostopic_17691_1480667483282 http://MysticLakeLinux:37858/
+[rosmaster.master][INFO] 2016-12-02 02:35:22,002: -SERVICE [/rostopic_17691_1480667483282/set_logger_level] /rostopic_17691_1480667483282 rosrpc://MysticLakeLinux:46633
+[rosmaster.master][INFO] 2016-12-02 02:35:22,002: -SERVICE [/rostopic_17691_1480667483282/get_loggers] /rostopic_17691_1480667483282 rosrpc://MysticLakeLinux:46633
+[rosmaster.master][INFO] 2016-12-02 02:35:22,079: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,535: -SUB [/multisense/camera/left/image_raw] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,536: -SUB [/multisense/camera/left/camera_info] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,606: -PUB [/clicked_point] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,607: -PUB [/move_base_simple/goal] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,607: -PUB [/initialpose] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,609: -SUB [/tf_static] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,610: -SUB [/tf] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,664: -SERVICE [/rviz_1480667220117203004/reload_shaders] /rviz_1480667220117203004 rosrpc://MysticLakeLinux:47672
+[rosmaster.master][INFO] 2016-12-02 02:35:44,744: -PUB [/rosout] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,745: -SUB [/clock] /rviz_1480667220117203004 http://MysticLakeLinux:46821/
+[rosmaster.master][INFO] 2016-12-02 02:35:44,745: -SERVICE [/rviz_1480667220117203004/get_loggers] /rviz_1480667220117203004 rosrpc://MysticLakeLinux:47672
+[rosmaster.master][INFO] 2016-12-02 02:35:44,746: -SERVICE [/rviz_1480667220117203004/set_logger_level] /rviz_1480667220117203004 rosrpc://MysticLakeLinux:47672
+[rosmaster.master][INFO] 2016-12-02 02:35:44,803: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,846: -PUB [/clicked_point] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,847: -PUB [/rosout] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,847: -PUB [/move_base_simple/goal] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,848: -PUB [/initialpose] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,849: -SUB [/tf] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,849: -SUB [/tf_static] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,850: -SUB [/multisense/camera/points2] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,851: -SUB [/clock] /rviz_1480667187679578664 http://MysticLakeLinux:43843/
+[rosmaster.master][INFO] 2016-12-02 02:36:10,852: -SERVICE [/rviz_1480667187679578664/get_loggers] /rviz_1480667187679578664 rosrpc://MysticLakeLinux:54230
+[rosmaster.master][INFO] 2016-12-02 02:36:10,853: -SERVICE [/rviz_1480667187679578664/set_logger_level] /rviz_1480667187679578664 rosrpc://MysticLakeLinux:54230
+[rosmaster.master][INFO] 2016-12-02 02:36:10,931: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,015: -SUB [/clock] /ihmc_ros/valkyrie/robot_data http://127.0.0.1:35524/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,016: -PUB [/ihmc_ros/valkyrie/control/stop_all_trajectories] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,017: -PUB [/rosout] /ihmc_ros/valkyrie/robot_data http://127.0.0.1:35524/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,026: -PUB [/ihmc_ros/valkyrie/output/robot_motion_status] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,028: -PUB [/ihmc_ros/valkyrie/output/imu/torso_leftTorsoImu] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,039: -PUB [/ihmc_ros/valkyrie/output/imu/upperNeckPitchLink_head_imu_sensor] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,041: -PUB [/tf] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,042: -PUB [/ihmc_ros/valkyrie/output/high_level_state] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,044: -PUB [/ihmc_ros/valkyrie/control/footstep_list] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,059: -PUB [/ihmc_ros/valkyrie/output/robot_pose] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,060: -PUB [/ihmc_ros/valkyrie/output/walking_status] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,061: -PUB [/ihmc_ros/valkyrie/control/pause_walking] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,064: -PUB [/ihmc_ros/valkyrie/output/capturability/capture_point] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,064: -PUB [/ihmc_ros/valkyrie/control/neck_desired_acceleration] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,074: -PUB [/ihmc_ros/valkyrie/output/behavior] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,075: -PUB [/ihmc_ros/valkyrie/output/capturability/right_foot_support_polygon] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,075: -PUB [/ihmc_ros/valkyrie/control/pelvis_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,077: -PUB [/ihmc_ros/valkyrie/output/imu/pelvis_pelvisMiddleImu] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,078: publisherUpdate[/ihmc_ros/valkyrie/control/stop_all_trajectories] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,079: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,086: publisherUpdate[/ihmc_ros/valkyrie/control/footstep_list] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,088: -PUB [/ihmc_ros/valkyrie/output/capturability/center_of_mass] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,090: -PUB [/ihmc_ros/valkyrie/control/go_home] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,091: -PUB [/ihmc_ros/valkyrie/control/whole_body_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,091: -PUB [/ihmc_ros/valkyrie/output/imu/pelvis_pelvisRearImu] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,103: -PUB [/ihmc_ros/valkyrie/control/high_level_state] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,103: -PUB [/ihmc_ros/valkyrie/output/footstep_status] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,117: publisherUpdate[/ihmc_ros/valkyrie/control/pause_walking] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,124: -PUB [/ihmc_ros/valkyrie/control/chest_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,131: publisherUpdate[/ihmc_ros/valkyrie/control/neck_desired_acceleration] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,143: publisherUpdate[/ihmc_ros/valkyrie/control/pelvis_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,147: -PUB [/rosout] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,148: publisherUpdate[/ihmc_ros/valkyrie/control/go_home] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,167: -PUB [/rosout] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,168: -PUB [/tf] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,169: -PUB [/rosout] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,169: -PUB [/tf_static] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,170: -PUB [/multisense/camera/stereo_proc_debayer_left/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,170: -SUB [/clock] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,171: -PUB [/multisense/camera/stereo_proc_debayer_left/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,171: -SUB [/ihmc_ros/valkyrie/output/joint_states] /robot_state_publisher http://MysticLakeLinux:36161/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,172: publisherUpdate[/ihmc_ros/valkyrie/control/whole_body_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,172: -PUB [/multisense/camera/left/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,173: -PUB [/ihmc_ros/valkyrie/control/pelvis_height_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,174: -PUB [/multisense/camera/left/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,174: -PUB [/multisense/camera/stereo_proc_rectify_mono_left/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,175: -SERVICE [/robot_state_publisher/get_loggers] /robot_state_publisher rosrpc://MysticLakeLinux:39409
+[rosmaster.master][INFO] 2016-12-02 02:36:58,175: -PUB [/multisense/camera/stereo_proc_rectify_mono_left/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,176: -SERVICE [/robot_state_publisher/set_logger_level] /robot_state_publisher rosrpc://MysticLakeLinux:39409
+[rosmaster.master][INFO] 2016-12-02 02:36:58,177: -PUB [/multisense/camera/left/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,177: -PUB [/multisense/camera/stereo_proc_rectify_color_left/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,178: -PUB [/multisense/camera/stereo_proc_rectify_color_left/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,178: -PUB [/multisense/camera/left/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,180: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,180: -PUB [/multisense/camera/stereo_proc_debayer_right/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,180: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,181: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,181: -PUB [/multisense/camera/stereo_proc_debayer_right/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,183: publisherUpdate[/ihmc_ros/valkyrie/control/high_level_state] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,184: -PUB [/ihmc_ros/valkyrie/control/foot_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,185: -PUB [/ihmc_ros/valkyrie/output/foot_force_sensor/left] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,185: -PUB [/ihmc_ros/valkyrie/output/capturability/is_in_double_support] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,186: -PUB [/multisense/camera/right/image_mono] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,186: -PUB [/ihmc_ros/valkyrie/output/capturability/left_foot_support_polygon] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,186: -PUB [/ihmc_ros/valkyrie/output/joint_states] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,187: -PUB [/multisense/camera/right/image_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,187: -PUB [/multisense/camera/stereo_proc_rectify_mono_right/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,188: -PUB [/multisense/camera/stereo_proc_rectify_mono_right/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,188: -PUB [/multisense/camera/right/image_rect] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,188: -PUB [/multisense/camera/stereo_proc_rectify_color_right/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,189: -PUB [/multisense/camera/stereo_proc_rectify_color_right/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,190: -PUB [/multisense/camera/right/image_rect_color] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,190: -PUB [/ihmc_ros/valkyrie/output/capturability/desired_capture_point] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,191: -PUB [/multisense/camera/stereo_proc/parameter_descriptions] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,191: -PUB [/multisense/camera/stereo_proc/parameter_updates] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,192: -PUB [/multisense/camera/disparity] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,192: -PUB [/ihmc_ros/valkyrie/output/foot_force_sensor/right] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,193: -PUB [/multisense/camera/points2] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,193: -SUB [/clock] /multisense/camera/stereo_proc http://MysticLakeLinux:46528/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,194: -SERVICE [/multisense/camera/stereo_proc/get_loggers] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,194: -SUB [/gazebo/set_link_state] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,195: -SUB [/gazebo/set_model_state] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,195: -SERVICE [/multisense/camera/stereo_proc/set_logger_level] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,196: -PUB [/clock] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,196: -SERVICE [/multisense/camera/stereo_proc_debayer_left/set_parameters] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,196: publisherUpdate[/clock] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,197: -SERVICE [/multisense/camera/stereo_proc_rectify_mono_left/set_parameters] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,197: publisherUpdate[/clock] -> http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,197: -PUB [/gazebo/link_states] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,198: publisherUpdate[/clock] -> http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,198: -SERVICE [/multisense/camera/stereo_proc_rectify_color_left/set_parameters] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,199: publisherUpdate[/clock] -> http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,199: -PUB [/gazebo/model_states] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,199: publisherUpdate[/clock] -> http://MysticLakeLinux:46635/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,199: -SERVICE [/multisense/camera/stereo_proc_debayer_right/set_parameters] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,200: publisherUpdate[/clock] -> http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,201: -SERVICE [/multisense/camera/stereo_proc_rectify_mono_right/set_parameters] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,201: publisherUpdate[/clock] -> http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,202: -SERVICE [/gazebo/spawn_gazebo_model] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,202: -SERVICE [/multisense/camera/stereo_proc_rectify_color_right/set_parameters] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,203: -SERVICE [/multisense/camera/stereo_proc/set_parameters] /multisense/camera/stereo_proc rosrpc://MysticLakeLinux:56531
+[rosmaster.master][INFO] 2016-12-02 02:36:58,203: -SERVICE [/gazebo/spawn_sdf_model] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,204: -SERVICE [/gazebo/spawn_urdf_model] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,204: -SERVICE [/gazebo/delete_model] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,205: -SERVICE [/gazebo/get_model_properties] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,205: -SERVICE [/gazebo/get_model_state] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,206: -SUB [/ihmc_ros/valkyrie/control/footstep_list] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,207: -SUB [/ihmc_ros/localization/pelvis_pose_correction] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,207: -SERVICE [/gazebo/get_world_properties] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,207: -SUB [/ihmc_ros/valkyrie/control/pelvis_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,208: -SERVICE [/gazebo/get_joint_properties] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,209: -SUB [/ihmc_ros/valkyrie/control/chest_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,210: -SERVICE [/gazebo/get_link_properties] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,210: -SUB [/ihmc_ros/valkyrie/control/end_effector_load_bearing] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,211: -SERVICE [/gazebo/get_link_state] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,212: -SUB [/ihmc_ros/valkyrie/control/pelvis_orientation_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,213: -SUB [/ihmc_ros/valkyrie/control/arm_desired_joint_accelerations] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,214: -SUB [/ihmc_ros/valkyrie/control/high_level_state] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,214: -SERVICE [/gazebo/get_physics_properties] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,215: -PUB [/ihmc_ros/valkyrie/control/neck_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,215: publisherUpdate[/ihmc_ros/valkyrie/control/chest_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,216: -PUB [/ihmc_ros/valkyrie/output/high_level_state_change] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,216: -SUB [/ihmc_ros/valkyrie/control/request_stop] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,217: -SERVICE [/gazebo/set_link_properties] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,217: -SERVICE [/gazebo/set_physics_properties] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,218: -SERVICE [/gazebo/set_model_state] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,218: -SERVICE [/gazebo/set_model_configuration] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,218: -SERVICE [/gazebo/set_joint_properties] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,219: -SERVICE [/gazebo/set_link_state] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,219: -SERVICE [/gazebo/pause_physics] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,220: -SERVICE [/gazebo/unpause_physics] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,221: -SERVICE [/gazebo/apply_body_wrench] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,221: -SERVICE [/gazebo/apply_joint_effort] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,221: -PUB [/ihmc_ros/valkyrie/control/end_effector_load_bearing] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,222: -SERVICE [/gazebo/clear_joint_forces] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,222: -SERVICE [/gazebo/clear_body_wrenches] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,223: -SERVICE [/gazebo/reset_simulation] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,223: -SERVICE [/gazebo/reset_world] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,224: -PUB [/gazebo/parameter_descriptions] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,225: -PUB [/gazebo/parameter_updates] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,225: -SERVICE [/gazebo/set_parameters] /gazebo rosrpc://MysticLakeLinux:55201
+[rosmaster.master][INFO] 2016-12-02 02:36:58,228: -SUB [/srcsim/qual1/light] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,228: -SUB [/srcsim/qual1/start] /gazebo http://MysticLakeLinux:45519/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,230: -SUB [/ihmc_ros/valkyrie/control/stop_all_trajectories] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,232: publisherUpdate[/ihmc_ros/valkyrie/control/pelvis_height_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,233: -SUB [/ihmc_ros/valkyrie/control/hand_desired_configuration] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,233: -SUB [/ihmc_ros/valkyrie/control/head_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,234: publisherUpdate[/ihmc_ros/valkyrie/control/foot_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,234: -SUB [/ihmc_ros/valkyrie/control/hand_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,235: -PUB [/ihmc_ros/valkyrie/control/arm_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,235: -PUB [/rosout] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,236: publisherUpdate[/clock] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,245: publisherUpdate[/ihmc_ros/valkyrie/control/neck_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,245: -SUB [/clock] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,246: publisherUpdate[/ihmc_ros/valkyrie/control/arm_trajectory] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,246: -SUB [/ihmc_ros/valkyrie/control/whole_body_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,248: -SUB [/ihmc_ros/valkyrie/control/pause_walking] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,249: -PUB [/ihmc_ros/valkyrie/control/abort_walking] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,251: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,251: -PUB [/ihmc_ros/valkyrie/control/hand_desired_configuration] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,252: publisherUpdate[/ihmc_ros/valkyrie/control/abort_walking] -> http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,253: -PUB [/ihmc_ros/valkyrie/control/arm_desired_joint_accelerations] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,253: -SUB [/ihmc_ros/valkyrie/control/neck_desired_acceleration] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,253: -PUB [/ihmc_ros/valkyrie/control/hand_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,258: -SUB [/ihmc_ros/valkyrie/control/go_home] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,263: -PUB [/ihmc_ros/valkyrie/control/pelvis_orientation_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,267: -SUB [/clock] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,268: -SUB [/ihmc_ros/valkyrie/control/low_level_control_mode] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,269: -SUB [/ihmc_ros/valkyrie/control/pelvis_height_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,270: -SUB [/ihmc_ros/valkyrie/control/foot_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,271: -SUB [/ihmc_ros/valkyrie/control/arm_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,272: -SUB [/ihmc_ros/valkyrie/control/neck_trajectory] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,273: -PUB [/ihmc_ros/valkyrie/control/head_trajectory] /ihmc_ros/valkyrie http://127.0.0.1:36547/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,273: -SUB [/ihmc_ros/valkyrie/control/abort_walking] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,281: -SUB [/ihmc_ros/localization/pelvis_odom_pose_correction] /ihmc_ros/valkyrie/controller http://127.0.0.1:46759/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,298: -PUB [/rosout] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,299: -PUB [/multisense/image_points2] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,299: -PUB [/rosout] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,299: -SUB [/clock] /multisense_points2_relay http://MysticLakeLinux:44554/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,300: -PUB [/multisense/image_points2_color] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,300: -SERVICE [/multisense_points2_relay/get_loggers] /multisense_points2_relay rosrpc://MysticLakeLinux:39495
+[rosmaster.master][INFO] 2016-12-02 02:36:58,301: -SUB [/clock] /multisense_points2_color_relay http://MysticLakeLinux:41836/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,301: -SERVICE [/multisense_points2_relay/set_logger_level] /multisense_points2_relay rosrpc://MysticLakeLinux:39495
+[rosmaster.master][INFO] 2016-12-02 02:36:58,301: -SERVICE [/multisense_points2_color_relay/get_loggers] /multisense_points2_color_relay rosrpc://MysticLakeLinux:35649
+[rosmaster.master][INFO] 2016-12-02 02:36:58,302: -SERVICE [/multisense_points2_color_relay/set_logger_level] /multisense_points2_color_relay rosrpc://MysticLakeLinux:35649
+[rosmaster.master][INFO] 2016-12-02 02:36:58,309: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,310: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,602: -PUB [/rosout] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,603: -PUB [/hardware_joint_states] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,604: -PUB [/hardware_joint_commands] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,604: -PUB [/force_torque_states] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,605: -PUB [/imu_states] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,606: -PUB [/rtt_period_overflow] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,606: -PUB [/rtt_rate] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,607: -SUB [/clock] /controller_manager_MysticLakeLinux_15534_7519392830653010679 http://MysticLakeLinux:34112/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,608: -SERVICE [/controller_manager_MysticLakeLinux_15534_7519392830653010679/get_loggers] /controller_manager_MysticLakeLinux_15534_7519392830653010679 rosrpc://MysticLakeLinux:40858
+[rosmaster.master][INFO] 2016-12-02 02:36:58,608: -SERVICE [/controller_manager_MysticLakeLinux_15534_7519392830653010679/set_logger_level] /controller_manager_MysticLakeLinux_15534_7519392830653010679 rosrpc://MysticLakeLinux:40858
+[rosmaster.master][INFO] 2016-12-02 02:36:58,609: -SERVICE [/controller_manager/list_controllers] /controller_manager_MysticLakeLinux_15534_7519392830653010679 rosrpc://MysticLakeLinux:40858
+[rosmaster.master][INFO] 2016-12-02 02:36:58,610: -SERVICE [/controller_manager/list_controller_types] /controller_manager_MysticLakeLinux_15534_7519392830653010679 rosrpc://MysticLakeLinux:40858
+[rosmaster.master][INFO] 2016-12-02 02:36:58,610: -SERVICE [/controller_manager/load_controller] /controller_manager_MysticLakeLinux_15534_7519392830653010679 rosrpc://MysticLakeLinux:40858
+[rosmaster.master][INFO] 2016-12-02 02:36:58,610: publisherUpdate[/rosout] -> http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:36:58,611: -SERVICE [/controller_manager/unload_controller] /controller_manager_MysticLakeLinux_15534_7519392830653010679 rosrpc://MysticLakeLinux:40858
+[rosmaster.master][INFO] 2016-12-02 02:36:58,612: -SERVICE [/controller_manager/switch_controller] /controller_manager_MysticLakeLinux_15534_7519392830653010679 rosrpc://MysticLakeLinux:40858
+[rosmaster.master][INFO] 2016-12-02 02:36:58,613: -SERVICE [/controller_manager/reload_controller_libraries] /controller_manager_MysticLakeLinux_15534_7519392830653010679 rosrpc://MysticLakeLinux:40858
+[rosmaster.master][INFO] 2016-12-02 02:37:15,134: -PUB [/rosout_agg] /rosout http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:37:15,134: -SUB [/clock] /rosout http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:37:15,135: -SUB [/rosout] /rosout http://MysticLakeLinux:43668/
+[rosmaster.master][INFO] 2016-12-02 02:37:15,135: -SERVICE [/rosout/get_loggers] /rosout rosrpc://MysticLakeLinux:55784
+[rosmaster.master][INFO] 2016-12-02 02:37:15,135: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://MysticLakeLinux:55784
+[rosmaster.main][INFO] 2016-12-02 02:37:15,232: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2016-12-02 02:37:15,232: stopping master...
+[rospy.core][INFO] 2016-12-02 02:37:15,232: signal_shutdown [atexit]

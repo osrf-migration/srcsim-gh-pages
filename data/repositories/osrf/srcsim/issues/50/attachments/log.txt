@@ -1,0 +1,505 @@
+... logging to /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/roslaunch-victor-src-2702.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://victor-src:44819/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ihmc_ros/robot_name: valkyrie
+ * /ihmc_ros/valkyrie/left_arm_joint_names: ['leftShoulderPit...
+ * /ihmc_ros/valkyrie/left_foot_frame_name: leftFoot
+ * /ihmc_ros/valkyrie/right_arm_joint_names: ['rightShoulderPi...
+ * /ihmc_ros/valkyrie/right_foot_frame_name: rightFoot
+ * /ihmc_valkyrie_control_java_bridge/jvm_args: -Djava.class.path...
+ * /ihmc_valkyrie_control_java_bridge/main_class: us.ihmc.valkyrieR...
+ * /ihmc_valkyrie_control_java_bridge/type: ihmc_ros_control/...
+ * /ihmc_valkyrie_control_java_bridge/working_dir: /home/victor/valk...
+ * /joint_state_controller/publish_rate: 50
+ * /joint_state_controller/type: joint_state_contr...
+ * /robot_description: <?xml version="1....
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+ * /use_sim_time: True
+ * /valkyrie/robot_description: <?xml version="1....
+
+NODES
+  /
+    IHMCValkyrieROSAPI (ihmc_ros_java_adapter/gradlew)
+    control_py_victor_src_2702_4665382181233709642 (robonet_tools/control)
+    controller_manager_victor_src_2702_1082355873970872920 (val_deploy/delayed_roslaunch.sh)
+    controller_spawner_victor_src_2702_9156253832858868242 (controller_manager/spawner)
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    sim_smt_topic_creator_victor_src_2702_3413622548845287883 (val_deploy/delayed_roslaunch.sh)
+    smtcore_victor_src_2702_3108002570297558941 (shared_memory_transport/smtcore)
+    startup_robot (srcsim/init_robot.sh)
+    urdf_spawner_victor_src_2702_7160044236519792454 (val_deploy/delayed_roslaunch.sh)
+
+auto-starting new master
+process[master]: started with pid [2714]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 43823626-c247-11e6-9d57-d0509929bafe
+process[rosout-1]: started with pid [2727]
+started core service [/rosout]
+process[smtcore_victor_src_2702_3108002570297558941-2]: started with pid [2730]
+process[control_py_victor_src_2702_4665382181233709642-3]: started with pid [2731]
+process[sim_smt_topic_creator_victor_src_2702_3413622548845287883-4]: started with pid [2732]
+delaying: 3 seconds
+process[controller_manager_victor_src_2702_1082355873970872920-5]: started with pid [2734]
+delaying: 5 seconds
+process[gazebo-6]: started with pid [2736]
+process[gazebo_gui-7]: started with pid [2740]
+process[urdf_spawner_victor_src_2702_7160044236519792454-8]: started with pid [2744]
+delaying: 7 seconds
+process[robot_state_publisher-9]: started with pid [2749]
+Log file /home/victor/.log already exists, proceeding...
+Log file /home/victor/.log already exists, proceeding...
+process[IHMCValkyrieROSAPI-10]: started with pid [2779]
+process[controller_spawner_victor_src_2702_9156253832858868242-11]: started with pid [2785]
+process[startup_robot-12]: started with pid [2786]
+wait 60s for system to load
+[INFO] [WallTime: 1481752202.858400] [0.000000] Controller Spawner: Waiting for service controller_manager/load_controller
+Gazebo multi-robot simulator, version 7.4.0
+Copyright (C) 2012-2016 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+[ INFO] [1481752204.397794611]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[ INFO] [1481752204.400388424]: Finished loading Gazebo ROS API Plugin.
+[Msg] Waiting for master.
+[Msg] Connected to gazebo master @ http://127.0.0.1:11345
+[Msg] Publicized address: 192.168.11.133
+starting: roslaunch val_gazebo smt_topic_creator.launch __name:=sim_smt_topic_creator_victor_src_2702_3413622548845287883 __log:=/home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/sim_smt_topic_creator_victor_src_2702_3413622548845287883-4.log
+... logging to /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/roslaunch-victor-src-2885.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://victor-src:36630/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+
+NODES
+  /
+    sim_smt_topic_creator_victor_src_2885_4164090148084958421 (val_gazebo/shm_topic_creator)
+
+ROS_MASTER_URI=http://localhost:11311
+
+core service [/rosout] found
+process[sim_smt_topic_creator_victor_src_2885_4164090148084958421-1]: started with pid [2908]
+[sim_smt_topic_creator_victor_src_2885_4164090148084958421-1] process has finished cleanly
+log file: /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/sim_smt_topic_creator_victor_src_2885_4164090148084958421-1*.log
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+[sim_smt_topic_creator_victor_src_2702_3413622548845287883-4] process has finished cleanly
+log file: /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/sim_smt_topic_creator_victor_src_2702_3413622548845287883-4*.log
+starting: roslaunch val_deploy val_control_sim.launch controller_manager_looprate:=500 __name:=controller_manager_victor_src_2702_1082355873970872920 __log:=/home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/controller_manager_victor_src_2702_1082355873970872920-5.log
+... logging to /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/roslaunch-victor-src-3015.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://victor-src:41938/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+
+NODES
+  /
+    controller_manager_victor_src_3015_1155195876772221897 (val_controller_manager_rtt/controller_exec)
+
+ROS_MASTER_URI=http://localhost:11311
+
+core service [/rosout] found
+process[controller_manager_victor_src_3015_1155195876772221897-1]: started with pid [3034]
+[ INFO] [1481752207.096205361, 0.021000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1481752207.134600457, 0.058000000]: Physics dynamic reconfigure ready.
+> Loading > buildSrcstarting: roslaunch val_gazebo spawn_urdf_model_from_robot_description.launch modelName:=valkyrie zOffset:=1.25 __name:=urdf_spawner_victor_src_2702_7160044236519792454 __log:=/home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/urdf_spawner_victor_src_2702_7160044236519792454-8.log
+... logging to /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/roslaunch-victor-src-3127.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://victor-src:44799/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+
+NODES
+  /
+    urdf_spawner (gazebo_ros/spawn_model)
+
+ROS_MASTER_URI=http://localhost:11311
+
+core service [/rosout] found
+process[urdf_spawner-1]: started with pid [3163]
+2016-12-14 22:50:09 localhost ncl_cpp: [NOTICE  ] [gov.nasa.HardwareInterface.initializeRobotHardware] Robot Hardware has Initialized. Ready to start loading Controllers. 
+
+spawn_model script started
+[INFO] [WallTime: 1481752209.456093] [0.000000] Loading model xml from ros parameter
+[INFO] [WallTime: 1481752209.472167] [2.378000] Waiting for service /gazebo/spawn_urdf_model
+[INFO] [WallTime: 1481752209.473722] [2.380000] Calling service /gazebo/spawn_urdf_model
+[INFO] [WallTime: 1481752209.486546] [2.393000] Controller Spawner: Waiting for service controller_manager/switch_controller
+[INFO] [WallTime: 1481752209.487889] [2.395000] Controller Spawner: Waiting for service controller_manager/unload_controller
+[INFO] [WallTime: 1481752209.488910] [2.396000] Loading controller: ihmc_valkyrie_control_java_bridge
+[ INFO] [1481752209.655031839, 2.565000000]: Starting JVM with arguments: -Djava.class.path=ValkyrieController.jar -XX:+UseSerialGC -Xmx4g -Xms4g -XX:NewSize=3g -XX:MaxNewSize=3g -XX:CompileThreshold=1000 -verbosegc -Djava.library.path=lib/
+Starting Java VM from path  /home/victor/valkyrie
+Warning [parser.cc:778] XML Element[imuTransform], child of element[sensor] not defined in SDF. Ignoring[imuTransform]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[port], child of element[sensor] not defined in SDF. Ignoring[port]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[imuTransform], child of element[sensor] not defined in SDF. Ignoring[imuTransform]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[port], child of element[sensor] not defined in SDF. Ignoring[port]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[sensor_number], child of element[sensor] not defined in SDF. Ignoring[sensor_number]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[sensor_number], child of element[sensor] not defined in SDF. Ignoring[sensor_number]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[imuTransform], child of element[sensor] not defined in SDF. Ignoring[imuTransform]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[node], child of element[sensor] not defined in SDF. Ignoring[node]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[api], child of element[sensor] not defined in SDF. Ignoring[api]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Warning [parser.cc:778] XML Element[port], child of element[sensor] not defined in SDF. Ignoring[port]. You may have an incorrect SDF file, or an sdformat version that doesn't support this element.
+Started Java VM: success
+[Wrn] [Event.cc:87] Warning: Deleteing a connection right after creation. Make sure to save the ConnectionPtr from a Connect call
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+[Err] [Connection.hh:267] Header is empty
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[ INFO] [1481752210.340355256, 2.598000000]: Camera Plugin (robotNamespace = /), Info: Using the 'robotNamespace' param: '/'
+[ INFO] [1481752210.340459060, 2.598000000]: Camera Plugin (robotNamespace = /), Info: Using the 'robotNamespace' param: '/'
+[ INFO] [1481752210.345524960, 2.598000000]: Camera Plugin (ns = /)  <tf_prefix_>, set to ""
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+[ INFO] [1481752210.377156648, 2.598000000]: Camera Plugin (ns = /)  <tf_prefix_>, set to ""
+[ INFO] [1481752210.382683452, 2.598000000]: Laser Plugin (robotNamespace = /), Info: Using the 'robotNamespace' param: '/'
+[ INFO] [1481752210.382846060, 2.598000000]: Starting GazeboRosLaser Plugin (ns = /)!
+[ INFO] [1481752210.390459609, 2.598000000]: GPU Laser Plugin (ns = /) <tf_prefix_>, set to ""
+[ INFO] [1481752210.391237674, 2.598000000]: LoadThread function completed
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[Wrn] [msgs.cc:1793] Conversion of sensor type[imu] not suppported.Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+
+[Wrn] [msgs.cc:1793] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[multicamera] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[gpu_ray] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[force_torque] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[force_torque] not suppported.
+[INFO] [WallTime: 1481752210.420695] [2.598000] Spawn status: SpawnModel: Successfully spawned model
+ > Resolving dependencies ':runtime'[Wrn] [ColladaLoader.cc:1461] Polylist input semantic: 'COLOR' is currently not supported
+[urdf_spawner-1] process has finished cleanly
+log file: /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/urdf_spawner-1*.log
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+[Wrn] [msgs.cc:1793] Conversion of sensor type[force_torque] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[force_torque] not suppported.
+[urdf_spawner_victor_src_2702_7160044236519792454-8] process has finished cleanly
+log file: /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/urdf_spawner_victor_src_2702_7160044236519792454-8*.log
+[ INFO] [1481752211.103385386, 2.598000000]: SharedMemoryInterfacePlugin: Loading
+2016-12-14 22:50:11 localhost ncl_cpp: [WARN    ] [gov.nasa.SharedMemorySimInterfacePlugin.findUrdfSensors] Possibly missing an api or node tag from one or more imu sensors
+2016-12-14 22:50:11 localhost ncl_cpp: [WARN    ] [gov.nasa.SharedMemorySimInterfacePlugin.findUrdfSensors] Imu sensor head_imu_sensor doesn't have <imuTransform> tag. It is likely that the data you receive from this sensor will be incorrect.
+[ INFO] [1481752211.234329828, 2.598000000]: SharedMemorySimInterfacePlugin: Loading complete!
+[ INFO] [1481752211.662597031, 2.598000000]: imu plugin missing <frameName>, defaults to <bodyName>
+[ INFO] [1481752211.662960396, 2.598000000]: imu plugin missing <frameName>, defaults to <bodyName>
+[ INFO] [1481752211.663134292, 2.598000000]: imu plugin missing <frameName>, defaults to <bodyName>
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[ INFO] [1481752211.706227955, 2.599000000]: Loading robot model from: 'models/val_description/sdf/valkyrie_sim.sdf'
+:buildSrc:compileJava UP-TO-DATE
+> Loading > buildSrc > :buildSrc:compileGroovy[Wrn] [msgs.cc:1793] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[imu] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[multicamera] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[gpu_ray] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[force_torque] not suppported.
+[Wrn] [msgs.cc:1793] Conversion of sensor type[force_torque] not suppported.
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+> Configuring > 0/1 projects > root project[ INFO] [1481752215.650344331, 3.528000000]: [INFO] (NetworkParameters.java:38): Looking for network parameters in network parameters file at /home/victor/.ihmc/IHMCNetworkParameters.ini
+[ INFO] [1481752215.650519783, 3.528000000]: [INFO] (NetworkParameters.java:42): Found Network parameters file at /home/victor/.ihmc/IHMCNetworkParameters.ini
+[ INFO] [1481752215.650774862, 3.528000000]: [INFO] (NetworkParameters.java:69): Looking for network parameters in environment variables
+[ INFO] [1481752215.650901655, 3.528000000]: [INFO] (NetworkParameters.java:70): Environment variables will override entries in the network parameters file.
+Attaching native thread 3428 with priority 45 to JVM
+:parseYaml UP-TO-DATE
+> Building 50% > :runJavaDelegate[ INFO] [1481752216.804860209, 3.799000000]: Looking for forceSensorDefinition leftAnkleRoll
+[ INFO] [1481752216.831992805, 3.807000000]: Looking for forceSensorDefinition rightAnkleRoll
+:runJavaDelegate
+Loading robot model from: 'models/val_description/sdf/valkyrie_sim.sdf'
+[INFO] (NetworkParameters.java:38): Looking for network parameters in network parameters file at /opt/ros/indigo/share/ihmc_valkyrie_ros/configurations/IHMCNetworkParametersSim.ini
+[INFO] (NetworkParameters.java:42): Found Network parameters file at /opt/ros/indigo/share/ihmc_valkyrie_ros/configurations/IHMCNetworkParametersSim.ini
+[INFO] (NetworkParameters.java:69): Looking for network parameters in environment variables
+[INFO] (NetworkParameters.java:70): Environment variables will override entries in the network parameters file.
+Connecting to controller using TCP on localhost
+[WARN] YoVariable: desiredMomentumRateLinearX is getting created with a null registry
+[WARN] YoVariable: desiredMomentumRateLinearY is getting created with a null registry
+[WARN] YoVariable: desiredMomentumRateLinearZ is getting created with a null registry
+[WARN] YoVariable: achievedMomentumRateLinearX is getting created with a null registry
+[WARN] YoVariable: achievedMomentumRateLinearY is getting created with a null registry
+[WARN] YoVariable: achievedMomentumRateLinearZ is getting created with a null registry
+[WARN] YoVariable: residualRootJointForceX is getting created with a null registry
+[WARN] YoVariable: residualRootJointForceY is getting created with a null registry
+[WARN] YoVariable: residualRootJointForceZ is getting created with a null registry
+[WARN] YoVariable: residualRootJointTorqueX is getting created with a null registry
+[WARN] YoVariable: residualRootJointTorqueY is getting created with a null registry
+[WARN] YoVariable: residualRootJointTorqueZ is getting created with a null registry
+> Building 50% > :runJavaDelegate[ INFO] [1481752221.483839098, 4.854000000]: IMUBasedPelvisRotationalStateUpdater: More than 1 IMU sensor, using only the first one: pelvis_pelvisRearImu
+[ INFO] [1481752221.598372838, 4.871000000]: PelvisIMUBasedLinearStateCalculator: More than 1 IMU sensor, using only the first one: pelvis_pelvisRearImu
+Attaching native thread 3453 with priority 45 to JVM
+log4j:WARN No appenders could be found for logger (org.ros.internal.node.client.Registrar).
+log4j:WARN Please initialize the log4j system properly.
+> Building 50% > :runJavaDelegate[ INFO] [1481752224.015640201, 5.567000000]: [INFO] (LogSessionBroadcaster.java:66): Announcing logging session on: name:lo (lo)
+[ INFO] [1481752224.068397971, 5.586000000]: [INFO] (LogSessionBroadcaster.java:307): Trying port 56414
+[INFO] (KryoObjectClient.java:130): Success! Connected KryoClient to SCS at ip localhost/127.0.0.1 on port 4895
+IHMC ROS API node successfully started.
+> Building 50% > :runJavaDelegateAttaching native thread 4157 with priority 40 to JVM
+[ INFO] [1481752228.899539905, 7.545000000]: [INFO] (ValkyrieRosControlController.java:307): Running with blocking synchronous execution between estimator and controller
+[INFO] [WallTime: 1481752228.990374] [7.589000] Controller Spawner: Loaded controllers: ihmc_valkyrie_control_java_bridge
+[INFO] [WallTime: 1481752229.197461] [7.689000] Started controllers: ihmc_valkyrie_control_java_bridge
+[ INFO] [1481752229.197690098, 7.689000000]: Setting estimator thread affinity to processor 1
+lower harness
+publishing and latching message for 3.0 seconds
+switch to high level control after 20 seconds
+Master Unknown message type[] From[33946]
+Master Unknown message type[] From[33946]
+[libprotobuf ERROR google/protobuf/message_lite.cc:123] Can't parse message of type "gazebo.msgs.Packet" because it is missing required fields: stamp, type, serialized_data
+Master Unknown message type[] From[33946]
+publishing and latching message for 3.0 seconds
+detach in 5 seconds
+done
+[startup_robot-12] process has finished cleanly
+log file: /home/victor/.ros/log/43823626-c247-11e6-9d57-d0509929bafe/startup_robot-12*.log
+publishing and latching message for 3.0 seconds
+Master Unknown message type[] From[33946]
+
+

@@ -1,0 +1,67 @@
+[rospy.client][INFO] 2016-12-02 02:20:55,051: init_node, name[/controller_spawner_MysticLakeLinux_14829_4854955791025789176], pid[14902]
+[xmlrpc][INFO] 2016-12-02 02:20:55,052: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2016-12-02 02:20:55,052: Started XML-RPC server [http://MysticLakeLinux:46635/]
+[rospy.init][INFO] 2016-12-02 02:20:55,052: ROS Slave URI: [http://MysticLakeLinux:46635/]
+[rospy.impl.masterslave][INFO] 2016-12-02 02:20:55,052: _ready: http://MysticLakeLinux:46635/
+[xmlrpc][INFO] 2016-12-02 02:20:55,052: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2016-12-02 02:20:55,053: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2016-12-02 02:20:55,152: registered with master
+[rospy.rosout][INFO] 2016-12-02 02:20:55,153: initializing /rosout core topic
+[rospy.rosout][INFO] 2016-12-02 02:20:55,155: connected to core topic /rosout
+[rospy.simtime][INFO] 2016-12-02 02:20:55,156: initializing /clock core topic
+[rospy.simtime][INFO] 2016-12-02 02:20:55,158: connected to core topic /clock
+[rosout][INFO] 2016-12-02 02:20:55,161: Controller Spawner: Waiting for service controller_manager/load_controller
+[rospy.internal][INFO] 2016-12-02 02:20:55,381: topic[/clock] adding connection to [http://MysticLakeLinux:45519/], count 0
+[rospy.internal][INFO] 2016-12-02 02:20:55,453: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2016-12-02 02:20:59,684: Controller Spawner: Waiting for service controller_manager/switch_controller
+[rosout][INFO] 2016-12-02 02:20:59,685: Controller Spawner: Waiting for service controller_manager/unload_controller
+[rosout][INFO] 2016-12-02 02:20:59,687: Loading controller: ihmc_valkyrie_control_java_bridge
+[rosout][INFO] 2016-12-02 02:21:09,180: Controller Spawner: Loaded controllers: ihmc_valkyrie_control_java_bridge
+[rosout][INFO] 2016-12-02 02:21:09,381: Started controllers: ihmc_valkyrie_control_java_bridge
+[rospy.core][INFO] 2016-12-02 02:36:58,003: signal_shutdown [signal-2]
+[rosout][INFO] 2016-12-02 02:36:58,004: Shutting down spawner. Stopping and unloading controllers...
+[rospy.internal][ERROR] 2016-12-02 02:36:58,200: Unable to initiate TCP/IP socket to MysticLakeLinux:55201 (http://MysticLakeLinux:45519/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 55201 to [127.0.0.1:35316 on socket 15]] [/controller_spawner_MysticLakeLinux_14829_4854955791025789176].
+
+[rospy.internal][ERROR] 2016-12-02 02:36:59,201: Unable to initiate TCP/IP socket to MysticLakeLinux:55201 (http://MysticLakeLinux:45519/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 55201 to [127.0.0.1:35466 on socket 14]] [/controller_spawner_MysticLakeLinux_14829_4854955791025789176].
+
+[rospy.internal][ERROR] 2016-12-02 02:37:01,203: Unable to initiate TCP/IP socket to MysticLakeLinux:55201 (http://MysticLakeLinux:45519/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 55201 to [127.0.0.1:35482 on socket 14]] [/controller_spawner_MysticLakeLinux_14829_4854955791025789176].
+
+[rospy.internal][ERROR] 2016-12-02 02:37:05,207: Unable to initiate TCP/IP socket to MysticLakeLinux:55201 (http://MysticLakeLinux:45519/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 55201 to [127.0.0.1:35510 on socket 14]] [/controller_spawner_MysticLakeLinux_14829_4854955791025789176].
+
+[rospy.core][INFO] 2016-12-02 02:37:13,027: signal_shutdown [signal-15]
+[rospy.internal][WARNING] 2016-12-02 02:37:13,214: Unknown error initiating TCP/IP socket to MysticLakeLinux:55201 (http://MysticLakeLinux:45519/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2016-12-02 02:37:13,214: topic[/clock] removing connection to http://MysticLakeLinux:45519/

@@ -1,0 +1,603 @@
+
+Program received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7fff3a7fc700 (LWP 32553)]
+0x00007ffff098fd19 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_ode.so.7
+(gdb) bt all
+No symbol "all" in current context.
+(gdb) thread apply bt all
+(gdb) bt
+#0  0x00007ffff098fd19 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_ode.so.7
+#1  0x00007ffff0990652 in dJointGetSliderPositionRate () from /usr/lib/x86_64-linux-gnu/libgazebo_ode.so.7
+#2  0x00007ffff61e5bc7 in gazebo::physics::ODESliderJoint::GetVelocity(unsigned int) const ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#3  0x00007ffff61c0ede in gazebo::physics::ODEJoint::ApplyImplicitStiffnessDamping() ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#4  0x00007ffff626ab55 in gazebo::physics::Joint::Update() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#5  0x00007ffff629d852 in gazebo::physics::Model::Update() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#6  0x00007ffff62d0736 in gazebo::physics::World::ModelUpdateSingleLoop() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#7  0x00007ffff62d5b61 in gazebo::physics::World::Update() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#8  0x00007ffff62e3d8b in gazebo::physics::World::Step() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#9  0x00007ffff62e41fd in gazebo::physics::World::RunLoop() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#10 0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#11 0x00007ffff55a5184 in start_thread (arg=0x7fff3a7fc700) at pthread_create.c:312
+#12 0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+(gdb) thread apply all bt
+
+Thread 66 (Thread 0x7ffef78ff700 (LWP 2053)):
+#0  __clock_nanosleep (clock_id=0, flags=0, req=0x7ffef78fe9d0, rem=0x7ffff69821e4 <__clock_nanosleep+132>)
+    at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:49
+#1  0x00007ffff795b6f3 in gazebo::common::Time::Sleep(gazebo::common::Time const&) () from /usr/lib/x86_64-linux-gnu/libgazebo_common.so.7
+#2  0x00007ffff795b8b7 in gazebo::common::Time::MSleep(unsigned int) () from /usr/lib/x86_64-linux-gnu/libgazebo_common.so.7
+#3  0x00007fff395828a0 in gazebo::Task3CP5::PublishLeakPose() ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libFinalsPlugin.so
+#4  0x00007fff3958fec9 in void std::_Mem_fn<void (gazebo::Task3CP5::*)()>::operator()<, void>(gazebo::Task3CP5*) const ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libFinalsPlugin.so
+#5  0x00007fff3958fd49 in void std::_Bind_simple<std::_Mem_fn<void (gazebo::Task3CP5::*)()> (gazebo::Task3CP5*)>::_M_invoke<0ul>(std::_Index_tuple<0ul>) () from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libFinalsPlugin.so
+#6  0x00007fff3958fa0d in std::_Bind_simple<std::_Mem_fn<void (gazebo::Task3CP5::*)()> (gazebo::Task3CP5*)>::operator()() ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libFinalsPlugin.so
+#7  0x00007fff3958f5e0 in std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (gazebo::Task3CP5::*)()> (gazebo::Task3CP5*)> >::_M_run()
+    () from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libFinalsPlugin.so
+#8  0x00007ffff720ba60 in ?? () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#9  0x00007ffff55a5184 in start_thread (arg=0x7ffef78ff700) at pthread_create.c:312
+#10 0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 65 (Thread 0x7ffefd7fa700 (LWP 1508)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fff0c4a61ef in gazebo::SRCSimRosHarness::QueueThread() ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libsrcsim_ros_harness.so
+#4  0x00007fff0c4bf0f3 in boost::_mfi::mf0<void, gazebo::SRCSimRosHarness>::operator()(gazebo::SRCSimRosHarness*) const ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libsrcsim_ros_harness.so
+#5  0x00007fff0c4be826 in void boost::_bi::list1<boost::_bi::value<gazebo::SRCSimRosHarness*> >::operator()<boost::_mfi::mf0<void, gazebo::SRCSimRosHarness>, boost::_bi::list0>(boost::_bi::type<void>, boost::_mfi::mf0<void, gazebo::SRCSimRosHarness>&, boost::_bi::list0&, int) ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libsrcsim_ros_harness.so
+#6  0x00007fff0c4bd4b7 in boost::_bi::bind_t<void, boost::_mfi::mf0<void, gazebo::SRCSimRosHarness>, boost::_bi::list1<boost::_bi::value<gazebo::SRCSimRosHarness*> > >::operator()() () from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libsrcsim_ros_harness.so
+#7  0x00007fff0c4bc20e in boost::detail::thread_data<boost::_bi::bind_t<void, boost::_mfi::mf0<void, gazebo::SRCSimRosHarness>, boost::_bi::list1<boost::_bi::value<gazebo::SRCSimRosHarness*> > > >::run() ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libsrcsim_ros_harness.so
+#8  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#9  0x00007ffff55a5184 in start_thread (arg=0x7ffefd7fa700) at pthread_create.c:312
+#10 0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 64 (Thread 0x7ffefdffb700 (LWP 1487)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fff0f9a6bea in gazebo::SRCMultiSenseSL::QueueThread() ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libSRCMultiSenseSLPlugin.so
+---Type <return> to continue, or q <return> to quit---
+#4  0x00007fff0f9c83f3 in boost::_mfi::mf0<void, gazebo::SRCMultiSenseSL>::operator()(gazebo::SRCMultiSenseSL*) const ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libSRCMultiSenseSLPlugin.so
+#5  0x00007fff0f9d57aa in void boost::_bi::list1<boost::_bi::value<gazebo::SRCMultiSenseSL*> >::operator()<boost::_mfi::mf0<void, gazebo::SRCMultiSenseSL>, boost::_bi::list0>(boost::_bi::type<void>, boost::_mfi::mf0<void, gazebo::SRCMultiSenseSL>&, boost::_bi::list0&, int) ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libSRCMultiSenseSLPlugin.so
+#6  0x00007fff0f9d4c83 in boost::_bi::bind_t<void, boost::_mfi::mf0<void, gazebo::SRCMultiSenseSL>, boost::_bi::list1<boost::_bi::value<gazebo::SRCMultiSenseSL*> > >::operator()() () from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libSRCMultiSenseSLPlugin.so
+#7  0x00007fff0f9d34a8 in boost::detail::thread_data<boost::_bi::bind_t<void, boost::_mfi::mf0<void, gazebo::SRCMultiSenseSL>, boost::_bi::list1<boost::_bi::value<gazebo::SRCMultiSenseSL*> > > >::run() ()
+   from /home/jwhite/w/zarj/zarjsim/../../srcsim/build/devel/lib/libSRCMultiSenseSLPlugin.so
+#8  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#9  0x00007ffff55a5184 in start_thread (arg=0x7ffefdffb700) at pthread_create.c:312
+#10 0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 63 (Thread 0x7ffefe7fc700 (LWP 1481)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fff0f6ffd2a in gazebo::GazeboRosIMU::IMUQueueThread() () from /opt/ros/indigo/lib/libgazebo_ros_imu.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7ffefe7fc700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 62 (Thread 0x7ffefeffd700 (LWP 1475)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fff0f6ffd2a in gazebo::GazeboRosIMU::IMUQueueThread() () from /opt/ros/indigo/lib/libgazebo_ros_imu.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7ffefeffd700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 61 (Thread 0x7ffeff7fe700 (LWP 1469)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fff0f6ffd2a in gazebo::GazeboRosIMU::IMUQueueThread() () from /opt/ros/indigo/lib/libgazebo_ros_imu.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7ffeff7fe700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 60 (Thread 0x7fff0cedb700 (LWP 1456)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fff1e4147fb in PubMultiQueue::spin() () from /opt/ros/indigo/lib/libgazebo_ros_gpu_laser.so
+---Type <return> to continue, or q <return> to quit---
+#2  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff0cedb700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 59 (Thread 0x7ffefffff700 (LWP 1457)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fff1e4147fb in PubMultiQueue::spin() () from /opt/ros/indigo/lib/libgazebo_ros_gpu_laser.so
+#2  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#3  0x00007ffff55a5184 in start_thread (arg=0x7ffefffff700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 57 (Thread 0x7fff0dedd700 (LWP 1449)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fff1e4147fb in PubMultiQueue::spin() () from /opt/ros/indigo/lib/libgazebo_ros_gpu_laser.so
+#2  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff0dedd700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 54 (Thread 0x7fff0f6e0700 (LWP 1443)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fff1e4147fb in PubMultiQueue::spin() () from /opt/ros/indigo/lib/libgazebo_ros_gpu_laser.so
+#2  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff0f6e0700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 47 (Thread 0x7fff17fff700 (LWP 1387)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fff3805b96a in gazebo::GazeboRosCameraUtils::CameraQueueThread() () from /opt/ros/indigo/lib/libgazebo_ros_camera_utils.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff17fff700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 46 (Thread 0x7fff1cfc2700 (LWP 1385)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fff3805b96a in gazebo::GazeboRosCameraUtils::CameraQueueThread() () from /opt/ros/indigo/lib/libgazebo_ros_camera_utils.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff1cfc2700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 45 (Thread 0x7fff1d9e3700 (LWP 1377)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fff1e4147fb in PubMultiQueue::spin() () from /opt/ros/indigo/lib/libgazebo_ros_gpu_laser.so
+---Type <return> to continue, or q <return> to quit---
+#2  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff1d9e3700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 41 (Thread 0x7fff39ffb700 (LWP 32554)):
+#0  0x00007ffff698208a in __clock_getres (clock_id=0, res=0x7ffff7b95140 <gazebo::common::Time::clockResolution>)
+    at ../sysdeps/posix/clock_getres.c:97
+#1  0x00007ffff62c9278 in gazebo::physics::State::State() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#2  0x00007ffff628c6b4 in gazebo::physics::LinkState::LinkState() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#3  0x00007ffff62a92b5 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#4  0x00007ffff62a3626 in gazebo::physics::ModelState::Load(boost::shared_ptr<gazebo::physics::Model>, gazebo::common::Time const&, gazebo::common::Time const&, unsigned long) () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#5  0x00007ffff62f22d4 in gazebo::physics::WorldState::Load(boost::shared_ptr<gazebo::physics::World>) ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#6  0x00007ffff62f2b1f in gazebo::physics::WorldState::LoadWithFilter(boost::shared_ptr<gazebo::physics::World>, std::string const&) ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#7  0x00007ffff62e2725 in gazebo::physics::World::LogWorker() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#8  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#9  0x00007ffff55a5184 in start_thread (arg=0x7fff39ffb700) at pthread_create.c:312
+#10 0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 40 (Thread 0x7fff3a7fc700 (LWP 32553)):
+#0  0x00007ffff098fd19 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_ode.so.7
+#1  0x00007ffff0990652 in dJointGetSliderPositionRate () from /usr/lib/x86_64-linux-gnu/libgazebo_ode.so.7
+#2  0x00007ffff61e5bc7 in gazebo::physics::ODESliderJoint::GetVelocity(unsigned int) const ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#3  0x00007ffff61c0ede in gazebo::physics::ODEJoint::ApplyImplicitStiffnessDamping() ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#4  0x00007ffff626ab55 in gazebo::physics::Joint::Update() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#5  0x00007ffff629d852 in gazebo::physics::Model::Update() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#6  0x00007ffff62d0736 in gazebo::physics::World::ModelUpdateSingleLoop() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#7  0x00007ffff62d5b61 in gazebo::physics::World::Update() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#8  0x00007ffff62e3d8b in gazebo::physics::World::Step() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#9  0x00007ffff62e41fd in gazebo::physics::World::RunLoop() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#10 0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#11 0x00007ffff55a5184 in start_thread (arg=0x7fff3a7fc700) at pthread_create.c:312
+#12 0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 39 (Thread 0x7fff3affd700 (LWP 32552)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007ffff5e82a5b in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so.7
+#2  0x00007ffff5e80de4 in gazebo::sensors::SensorManager::SensorContainer::RunLoop() ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so.7
+#3  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#4  0x00007ffff55a5184 in start_thread (arg=0x7fff3affd700) at pthread_create.c:312
+#5  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 38 (Thread 0x7fff3b7fe700 (LWP 32551)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007ffff5e82a5b in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so.7
+---Type <return> to continue, or q <return> to quit---
+#2  0x00007ffff5e80973 in gazebo::sensors::SensorManager::SensorContainer::RunLoop() ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so.7
+#3  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#4  0x00007ffff55a5184 in start_thread (arg=0x7fff3b7fe700) at pthread_create.c:312
+#5  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 37 (Thread 0x7fff3bfff700 (LWP 32550)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007ffff72084dc in std::condition_variable::wait(std::unique_lock<std::mutex>&) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#2  0x00007ffff768c28f in gazebo::util::LogRecord::RunWrite() () from /usr/lib/x86_64-linux-gnu/libgazebo_util.so.7
+#3  0x00007ffff720ba60 in ?? () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#4  0x00007ffff55a5184 in start_thread (arg=0x7fff3bfff700) at pthread_create.c:312
+#5  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 36 (Thread 0x7fff68bf5700 (LWP 32549)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007ffff72084dc in std::condition_variable::wait(std::unique_lock<std::mutex>&) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#2  0x00007ffff768f14b in gazebo::util::LogRecord::RunUpdate() () from /usr/lib/x86_64-linux-gnu/libgazebo_util.so.7
+#3  0x00007ffff720ba60 in ?? () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#4  0x00007ffff55a5184 in start_thread (arg=0x7fff68bf5700) at pthread_create.c:312
+#5  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 35 (Thread 0x7fff693f6700 (LWP 32548)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007ffff72084dc in std::condition_variable::wait(std::unique_lock<std::mutex>&) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#2  0x00007ffff768f386 in gazebo::util::LogRecord::Cleanup() () from /usr/lib/x86_64-linux-gnu/libgazebo_util.so.7
+#3  0x00007ffff720ba60 in ?? () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#4  0x00007ffff55a5184 in start_thread (arg=0x7fff693f6700) at pthread_create.c:312
+#5  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 34 (Thread 0x7fff697f7700 (LWP 32482)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+#1  0x00007ffff517d2db in ?? () from /usr/lib/libtbb.so.2
+#2  0x00007ffff517d2f9 in ?? () from /usr/lib/libtbb.so.2
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff697f7700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 33 (Thread 0x7fff69bf8700 (LWP 32481)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+#1  0x00007ffff517d2db in ?? () from /usr/lib/libtbb.so.2
+#2  0x00007ffff517d2f9 in ?? () from /usr/lib/libtbb.so.2
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff69bf8700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 32 (Thread 0x7fff69ff9700 (LWP 32480)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+#1  0x00007ffff517d2db in ?? () from /usr/lib/libtbb.so.2
+#2  0x00007ffff517d2f9 in ?? () from /usr/lib/libtbb.so.2
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff69ff9700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+---Type <return> to continue, or q <return> to quit---
+
+Thread 31 (Thread 0x7fff6a3fa700 (LWP 32479)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+#1  0x00007ffff517d2db in ?? () from /usr/lib/libtbb.so.2
+#2  0x00007ffff517d2f9 in ?? () from /usr/lib/libtbb.so.2
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff6a3fa700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 30 (Thread 0x7fff6a7fb700 (LWP 32478)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+#1  0x00007ffff517d2db in ?? () from /usr/lib/libtbb.so.2
+#2  0x00007ffff517d2f9 in ?? () from /usr/lib/libtbb.so.2
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff6a7fb700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 29 (Thread 0x7fff6abfc700 (LWP 32477)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+#1  0x00007ffff517d2db in ?? () from /usr/lib/libtbb.so.2
+#2  0x00007ffff517d2f9 in ?? () from /usr/lib/libtbb.so.2
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff6abfc700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 28 (Thread 0x7fff6affd700 (LWP 32476)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+#1  0x00007ffff517d2db in ?? () from /usr/lib/libtbb.so.2
+#2  0x00007ffff517d2f9 in ?? () from /usr/lib/libtbb.so.2
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fff6affd700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 27 (Thread 0x7fff6b7fe700 (LWP 32390)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffee33c690 in ?? () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#2  0x00007fffee33b6af in Ogre::DefaultWorkQueue::waitForNextRequest() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#3  0x00007fffee33bb24 in Ogre::DefaultWorkQueue::_threadMain() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff6b7fe700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 26 (Thread 0x7fff6bfff700 (LWP 32389)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffee33c690 in ?? () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#2  0x00007fffee33b6af in Ogre::DefaultWorkQueue::waitForNextRequest() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#3  0x00007fffee33bb24 in Ogre::DefaultWorkQueue::_threadMain() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff6bfff700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 25 (Thread 0x7fff84fdc700 (LWP 32388)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffee33c690 in ?? () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+---Type <return> to continue, or q <return> to quit---
+#2  0x00007fffee33b6af in Ogre::DefaultWorkQueue::waitForNextRequest() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#3  0x00007fffee33bb24 in Ogre::DefaultWorkQueue::_threadMain() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff84fdc700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 24 (Thread 0x7fff857dd700 (LWP 32387)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffee33c690 in ?? () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#2  0x00007fffee33b6af in Ogre::DefaultWorkQueue::waitForNextRequest() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#3  0x00007fffee33bb24 in Ogre::DefaultWorkQueue::_threadMain() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff857dd700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 23 (Thread 0x7fff85fde700 (LWP 32386)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffee33c690 in ?? () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#2  0x00007fffee33b6af in Ogre::DefaultWorkQueue::waitForNextRequest() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#3  0x00007fffee33bb24 in Ogre::DefaultWorkQueue::_threadMain() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff85fde700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 22 (Thread 0x7fff867df700 (LWP 32385)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffee33c690 in ?? () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#2  0x00007fffee33b6af in Ogre::DefaultWorkQueue::waitForNextRequest() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#3  0x00007fffee33bb24 in Ogre::DefaultWorkQueue::_threadMain() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff867df700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 21 (Thread 0x7fff86fe0700 (LWP 32384)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffee33c690 in ?? () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#2  0x00007fffee33b6af in Ogre::DefaultWorkQueue::waitForNextRequest() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#3  0x00007fffee33bb24 in Ogre::DefaultWorkQueue::_threadMain() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff86fe0700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 20 (Thread 0x7fff877e1700 (LWP 32383)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffee33c690 in ?? () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#2  0x00007fffee33b6af in Ogre::DefaultWorkQueue::waitForNextRequest() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#3  0x00007fffee33bb24 in Ogre::DefaultWorkQueue::_threadMain() () from /usr/lib/x86_64-linux-gnu/libOgreMain.so.1.8.1
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fff877e1700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+---Type <return> to continue, or q <return> to quit---
+
+Thread 19 (Thread 0x7fff9f7fe700 (LWP 32377)):
+#0  0x00007ffff71c93c9 in std::locale::operator=(std::locale const&) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#1  0x00007ffff71c87d7 in std::ios_base::_M_init() () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#2  0x00007ffff71d6801 in std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*) ()
+   from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#3  0x00007ffff61b84d6 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#4  0x00007ffff61b9483 in bool sdf::Param::Get<gazebo::math::Vector3>(gazebo::math::Vector3&) const ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#5  0x00007ffff61b99c6 in gazebo::math::Vector3 sdf::Element::Get<gazebo::math::Vector3>(std::string const&) ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#6  0x00007ffff61b9a22 in gazebo::math::Vector3 sdf::Element::Get<gazebo::math::Vector3>(std::string const&) ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#7  0x00007ffff626d2cb in gazebo::physics::Joint::Init() () from /usr/lib/x86_64-linux-gnu/libgazebo_physics.so.7
+#8  0x00007fff0c20f854 in gazebo::SRCHarnessPlugin::Attach() () from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#9  0x00007fff0c210131 in gazebo::SRCHarnessPlugin::Attach(ignition::math::Pose3<double> const&) ()
+   from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#10 0x00007fff0c210d68 in gazebo::SRCHarnessPlugin::OnAttach(boost::shared_ptr<gazebo::msgs::Pose const> const&) ()
+   from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#11 0x00007fff0c225b6e in boost::_mfi::mf1<void, gazebo::SRCHarnessPlugin, boost::shared_ptr<gazebo::msgs::Pose const> const&>::operator()(gazebo::SRCHarnessPlugin*, boost::shared_ptr<gazebo::msgs::Pose const> const&) const ()
+   from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#12 0x00007fff0c224814 in void boost::_bi::list2<boost::_bi::value<gazebo::SRCHarnessPlugin*>, boost::arg<1> >::operator()<boost::_mfi::mf1<void, gazebo::SRCHarnessPlugin, boost::shared_ptr<gazebo::msgs::Pose const> const&>, boost::_bi::list1<boost::shared_ptr<gazebo::msgs::Pose const> const&> >(boost::_bi::type<void>, boost::_mfi::mf1<void, gazebo::SRCHarnessPlugin, boost::shared_ptr<gazebo::msgs::Pose const> const&>&, boost::_bi::list1<boost::shared_ptr<gazebo::msgs::Pose const> const&>&, int) ()
+   from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#13 0x00007fff0c222df8 in void boost::_bi::bind_t<void, boost::_mfi::mf1<void, gazebo::SRCHarnessPlugin, boost::shared_ptr<gazebo::msgs::Pose const> const&>, boost::_bi::list2<boost::_bi::value<gazebo::SRCHarnessPlugin*>, boost::arg<1> > >::operator()<boost::shared_ptr<gazebo::msgs::Pose const> >(boost::shared_ptr<gazebo::msgs::Pose const> const&) () from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#14 0x00007fff0c221a7b in boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, gazebo::SRCHarnessPlugin, boost::shared_ptr<gazebo::msgs::Pose const> const&>, boost::_bi::list2<boost::_bi::value<gazebo::SRCHarnessPlugin*>, boost::arg<1> > >, void, boost::shared_ptr<gazebo::msgs::Pose const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<gazebo::msgs::Pose const> const&) () from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#15 0x00007fff0c22c1bd in boost::function1<void, boost::shared_ptr<gazebo::msgs::Pose const> const&>::operator()(boost::shared_ptr<gazebo::msgs::Pose const> const&) const () from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#16 0x00007fff0c22b744 in gazebo::transport::CallbackHelperT<gazebo::msgs::Pose>::HandleMessage(boost::shared_ptr<google::protobuf::Message>) () from /home/jwhite/w/srcsim/build/devel/lib/libSRCHarnessPlugin.so
+#17 0x00007ffff6645a5a in gazebo::transport::Node::ProcessIncoming() () from /usr/lib/x86_64-linux-gnu/libgazebo_transport.so.7
+#18 0x00007ffff664f04b in gazebo::transport::TopicManager::ProcessNodes(bool) () from /usr/lib/x86_64-linux-gnu/libgazebo_transport.so.7
+#19 0x00007ffff663e7b6 in gazebo::transport::ConnectionManager::RunUpdate() () from /usr/lib/x86_64-linux-gnu/libgazebo_transport.so.7
+#20 0x00007ffff663e955 in gazebo::transport::ConnectionManager::Run() () from /usr/lib/x86_64-linux-gnu/libgazebo_transport.so.7
+#21 0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#22 0x00007ffff55a5184 in start_thread (arg=0x7fff9f7fe700) at pthread_create.c:312
+#23 0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 17 (Thread 0x7fffbcff9700 (LWP 32374)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+---Type <return> to continue, or q <return> to quit---
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd14d877a in gazebo::GazeboRosApiPlugin::gazeboQueueThread() () from /opt/ros/indigo/lib/libgazebo_ros_api_plugin.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffbcff9700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 16 (Thread 0x7fffbd7fa700 (LWP 32373)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b961c in ros::CallbackQueue::callOne(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd1201fc6 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffbd7fa700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 15 (Thread 0x7fffbdffb700 (LWP 32372)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b961c in ros::CallbackQueue::callOne(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd1201fc6 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffbdffb700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 14 (Thread 0x7fffbe7fc700 (LWP 32371)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b961c in ros::CallbackQueue::callOne(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd1201fc6 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffbe7fc700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 13 (Thread 0x7fffbeffd700 (LWP 32369)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b961c in ros::CallbackQueue::callOne(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd1201fc6 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffbeffd700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+---Type <return> to continue, or q <return> to quit---
+
+Thread 12 (Thread 0x7fffbf7fe700 (LWP 32368)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b961c in ros::CallbackQueue::callOne(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd1201fc6 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffbf7fe700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 11 (Thread 0x7fffbffff700 (LWP 32367)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b961c in ros::CallbackQueue::callOne(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd1201fc6 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffbffff700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 10 (Thread 0x7fffcceab700 (LWP 32366)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b961c in ros::CallbackQueue::callOne(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd1201fc6 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffcceab700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 9 (Thread 0x7fffcd6ac700 (LWP 32365)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd11b961c in ros::CallbackQueue::callOne(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd1201fc6 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffcd6ac700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 8 (Thread 0x7fffcdead700 (LWP 32364)):
+#0  pthread_cond_timedwait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_timedwait.S:238
+#1  0x00007fffd11bbd75 in bool boost::condition_variable::timed_wait<boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> >(boost::unique_lock<boost::mutex>&, boost::date_time::subsecond_duration<boost::posix_time::time_duration, 1000000l> const&) ()
+   from /opt/ros/indigo/lib/libroscpp.so
+---Type <return> to continue, or q <return> to quit---
+#2  0x00007fffd11b9d8d in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd11e9a34 in ros::internalCallbackQueueThreadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffcdead700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 7 (Thread 0x7fffce6ae700 (LWP 32352)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007fffd11e72db in ros::ROSOutAppender::logThread() () from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#3  0x00007ffff55a5184 in start_thread (arg=0x7fffce6ae700) at pthread_create.c:312
+#4  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 6 (Thread 0x7fffceeaf700 (LWP 32351)):
+#0  0x00007ffff696b4c3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00007fffd0ad0498 in XmlRpc::XmlRpcDispatch::work(double) () from /opt/ros/indigo/lib/libxmlrpcpp.so
+#2  0x00007fffd11915aa in ros::XMLRPCManager::serverThreadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#4  0x00007ffff55a5184 in start_thread (arg=0x7fffceeaf700) at pthread_create.c:312
+#5  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 5 (Thread 0x7fffcf6b0700 (LWP 32350)):
+#0  0x00007ffff696684d in poll () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00007fffd119ae96 in ros::poll_sockets(pollfd*, unsigned long, int) () from /opt/ros/indigo/lib/libroscpp.so
+#2  0x00007fffd12076c7 in ros::PollSet::update(int) () from /opt/ros/indigo/lib/libroscpp.so
+#3  0x00007fffd11a82a5 in ros::PollManager::threadFunc() () from /opt/ros/indigo/lib/libroscpp.so
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffcf6b0700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 4 (Thread 0x7fffcfeb1700 (LWP 32347)):
+#0  __clock_nanosleep (clock_id=0, flags=0, req=0x7fffcfeb0d10, rem=0x7ffff69821e4 <__clock_nanosleep+132>)
+    at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:49
+#1  0x00007ffff795b6f3 in gazebo::common::Time::Sleep(gazebo::common::Time const&) () from /usr/lib/x86_64-linux-gnu/libgazebo_common.so.7
+#2  0x00007ffff795b8b7 in gazebo::common::Time::MSleep(unsigned int) () from /usr/lib/x86_64-linux-gnu/libgazebo_common.so.7
+#3  0x00007ffff7bc0a55 in gazebo::Master::Run() () from /usr/lib/x86_64-linux-gnu/libgazebo.so.7
+#4  0x00007ffff720ba60 in ?? () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffcfeb1700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 3 (Thread 0x7fffd06b2700 (LWP 32346)):
+#0  0x00007ffff6974283 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00007ffff662fe78 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_transport.so.7
+#2  0x00007ffff6635608 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_transport.so.7
+#3  0x00007ffff6644376 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_transport.so.7
+#4  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#5  0x00007ffff55a5184 in start_thread (arg=0x7fffd06b2700) at pthread_create.c:312
+#6  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 2 (Thread 0x7fffd4cf4700 (LWP 32344)):
+---Type <return> to continue, or q <return> to quit---
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00007ffff7930a7b in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_common.so.7
+#2  0x00007ffff792af3f in gazebo::common::ModelDatabase::UpdateModelCache(bool) () from /usr/lib/x86_64-linux-gnu/libgazebo_common.so.7
+#3  0x00007ffff42c3a4a in ?? () from /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0
+#4  0x00007ffff55a5184 in start_thread (arg=0x7fffd4cf4700) at pthread_create.c:312
+#5  0x00007ffff6973bed in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+
+Thread 1 (Thread 0x7ffff7f7b880 (LWP 32224)):
+#0  __GI_____strtod_l_internal (nptr=0x1c700778 "0", endptr=0x7fffffffc468, group=<optimized out>, loc=0x7ffff6c35400 <_nl_C_locobj>)
+    at strtod_l.c:726
+#1  0x00007ffff71d5dfe in void std::__convert_to_v<double>(char const*, double&, std::_Ios_Iostate&, __locale_struct* const&) ()
+   from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#2  0x00007ffff71e9926 in std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::do_get(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, std::_Ios_Iostate&, double&) const ()
+   from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#3  0x00007ffff71da1f5 in std::istream& std::istream::_M_extract<double>(double&) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#4  0x00007ffff4ef24c8 in void sdf::Param::Init<ignition::math::Vector3<double> >(std::string const&) ()
+   from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#5  0x00007ffff4ee85bf in sdf::Param::Param(std::string const&, std::string const&, std::string const&, bool, std::string const&) ()
+   from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#6  0x00007ffff4ea60c4 in sdf::Element::CreateParam(std::string const&, std::string const&, std::string const&, bool, std::string const&)
+    () from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#7  0x00007ffff4ea617b in sdf::Element::AddValue(std::string const&, std::string const&, bool, std::string const&) ()
+   from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#8  0x00007ffff4eb0a95 in sdf::initXml(TiXmlElement*, std::shared_ptr<sdf::Element>) () from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#9  0x00007ffff4eb11f3 in sdf::initXml(TiXmlElement*, std::shared_ptr<sdf::Element>) () from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#10 0x00007ffff4eb1e10 in sdf::initDoc(TiXmlDocument*, std::shared_ptr<sdf::Element>) () from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#11 0x00007ffff4eb060b in sdf::initFile(std::string const&, std::shared_ptr<sdf::Element>) ()
+   from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#12 0x00007ffff4eb1389 in sdf::initXml(TiXmlElement*, std::shared_ptr<sdf::Element>) () from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#13 0x00007ffff4eb1e10 in sdf::initDoc(TiXmlDocument*, std::shared_ptr<sdf::Element>) () from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#14 0x00007ffff4eb060b in sdf::initFile(std::string const&, std::shared_ptr<sdf::Element>) ()
+   from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#15 0x00007ffff4eb1389 in sdf::initXml(TiXmlElement*, std::shared_ptr<sdf::Element>) () from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#16 0x00007ffff4eb1e10 in sdf::initDoc(TiXmlDocument*, std::shared_ptr<sdf::Element>) () from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#17 0x00007ffff4eb060b in sdf::initFile(std::string const&, std::shared_ptr<sdf::Element>) ()
+   from /usr/lib/x86_64-linux-gnu/libsdformat.so.4
+#18 0x00007fffee7cb598 in gazebo::rendering::Visual::Init(std::string const&, std::shared_ptr<gazebo::rendering::Visual>, bool) ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so.7
+#19 0x00007fffee7d14ea in gazebo::rendering::Visual::Visual(std::string const&, std::shared_ptr<gazebo::rendering::Visual>, bool) ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so.7
+#20 0x00007fffee7a0d60 in gazebo::rendering::Scene::ProcessVisualMsg(boost::shared_ptr<gazebo::msgs::Visual const> const&, gazebo::rendering::Visual::VisualType) () from /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so.7
+#21 0x00007fffee7a20a8 in gazebo::rendering::Scene::PreRender() () from /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so.7
+#22 0x00007ffff5e7a575 in ?? () from /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so.7
+#23 0x00007ffff5e7ec77 in gazebo::sensors::SensorManager::ImageSensorContainer::Update(bool) ()
+   from /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so.7
+#24 0x00007ffff5e7f47f in gazebo::sensors::SensorManager::Update(bool) () from /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so.7
+#25 0x00007ffff7bb1787 in gazebo::Server::Run() () from /usr/lib/x86_64-linux-gnu/libgazebo.so.7
+#26 0x00000000004024d9 in ?? ()
+---Type <return> to continue, or q <return> to quit---
+#27 0x00007ffff6897f45 in __libc_start_main (main=0x4023e0, argc=12, argv=0x7fffffffdc28, init=<optimized out>, fini=<optimized out>, 
+    rtld_fini=<optimized out>, stack_end=0x7fffffffdc18) at libc-start.c:287
+#28 0x0000000000402a38 in _start ()
+(gdb) 
+

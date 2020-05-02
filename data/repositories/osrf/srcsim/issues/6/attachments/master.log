@@ -1,0 +1,41 @@
+[rosmaster.main][INFO] 2016-11-08 08:35:26,892: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2016-11-08 08:35:26,892: Starting ROS Master Node
+[xmlrpc][INFO] 2016-11-08 08:35:26,893: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2016-11-08 08:35:26,894: Started XML-RPC server [http://Mingo-Mtn-Robotics:11311/]
+[rosmaster.master][INFO] 2016-11-08 08:35:26,894: Master initialized: port[11311], uri[http://Mingo-Mtn-Robotics:11311/]
+[xmlrpc][INFO] 2016-11-08 08:35:26,894: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2016-11-08 08:35:26,952: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2016-11-08 08:35:26,954: +PARAM [/roslaunch/uris/host_mingo_mtn_robotics__43310] by /roslaunch
+[rosmaster.master][INFO] 2016-11-08 08:35:27,019: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2016-11-08 08:35:27,020: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2016-11-08 08:35:27,020: +PARAM [/robot_description] by /roslaunch
+[rosmaster.master][INFO] 2016-11-08 08:35:27,021: +SERVICE [/rosout/get_loggers] /rosout http://Mingo-Mtn-Robotics:33578/
+[rosmaster.master][INFO] 2016-11-08 08:35:27,022: +SERVICE [/rosout/set_logger_level] /rosout http://Mingo-Mtn-Robotics:33578/
+[rosmaster.master][INFO] 2016-11-08 08:35:27,024: +PUB [/rosout_agg] /rosout http://Mingo-Mtn-Robotics:33578/
+[rosmaster.master][INFO] 2016-11-08 08:35:27,030: +SUB [/rosout] /rosout http://Mingo-Mtn-Robotics:33578/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,430: +PARAM [/roslaunch/uris/host_mingo_mtn_robotics__40870] by /roslaunch
+[rosmaster.master][INFO] 2016-11-08 08:35:29,438: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2016-11-08 08:35:29,439: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2016-11-08 08:35:29,573: +PUB [/rosout] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,573: +SERVICE [/controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822/get_loggers] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,574: +SERVICE [/controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822/set_logger_level] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,597: publisherUpdate[/rosout] -> http://Mingo-Mtn-Robotics:33578/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,794: +PUB [/hardware_joint_states] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,795: +PUB [/hardware_joint_commands] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,796: +PUB [/force_torque_states] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,797: +PUB [/imu_states] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,901: -PUB [/rosout] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,903: -PUB [/hardware_joint_states] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,904: -PUB [/hardware_joint_commands] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,905: -PUB [/force_torque_states] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,905: -PUB [/imu_states] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 http://Mingo-Mtn-Robotics:37316/
+[rosmaster.master][INFO] 2016-11-08 08:35:29,907: -SERVICE [/controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822/get_loggers] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 rosrpc://Mingo-Mtn-Robotics:60483
+[rosmaster.master][INFO] 2016-11-08 08:35:29,908: -SERVICE [/controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822/set_logger_level] /controller_manager_Mingo_Mtn_Robotics_24096_6578599215757810822 rosrpc://Mingo-Mtn-Robotics:60483
+[rosmaster.master][INFO] 2016-11-08 08:35:29,999: publisherUpdate[/rosout] -> http://Mingo-Mtn-Robotics:33578/
+[rosmaster.master][INFO] 2016-11-08 08:35:39,618: -PUB [/rosout_agg] /rosout http://Mingo-Mtn-Robotics:33578/
+[rosmaster.master][INFO] 2016-11-08 08:35:39,620: -SUB [/rosout] /rosout http://Mingo-Mtn-Robotics:33578/
+[rosmaster.master][INFO] 2016-11-08 08:35:39,622: -SERVICE [/rosout/get_loggers] /rosout rosrpc://Mingo-Mtn-Robotics:43101
+[rosmaster.master][INFO] 2016-11-08 08:35:39,623: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://Mingo-Mtn-Robotics:43101
+[rosmaster.main][INFO] 2016-11-08 08:35:39,661: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2016-11-08 08:35:39,661: stopping master...
+[rospy.core][INFO] 2016-11-08 08:35:39,661: signal_shutdown [atexit]

@@ -1,0 +1,5 @@
+
+
+1478622927.023747784  Node Startup
+1478622929.865795319 ERROR [/catkin_package_prep/package_ws/src/val_control/val_robot_interface/src/Robot_Interface.cpp:148(RobotInterface::addJointsAndActuators) [topics: /rosout, /hardware_joint_states, /hardware_joint_commands, /force_torque_states, /imu_states]  Exception encountered while attempting to add an actuator! Check your URDF for correct XML formatting!
+1478622929.866078494 ERROR [/catkin_package_prep/package_ws/src/val_control/val_controller_manager_rtt/src/ValSimControllerManager.cpp:35(ValSimControllerManager::configureHook) [topics: /rosout, /hardware_joint_states, /hardware_joint_commands, /force_torque_states, /imu_states] Fatal exception error encountered initializing RobotHardwareInterface, exiting
